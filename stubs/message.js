@@ -1,0 +1,35 @@
+module.exports = (function () {
+
+  // N/ui/message Module Members
+
+  var message = function() {};
+
+  // Object
+
+  var Message = function() {};
+
+  message.prototype.Message = Message;
+
+  // Method
+
+  message.prototype.create = function(options) {};
+
+  // Message Object Methods
+
+  Message.prototype.hide = function() {};
+
+  Message.prototype.show = function() {};
+
+  // Enum
+
+  function Type() {
+    this.CONFIRMATION = "CONFIRMATION";
+    this.INFORMATION = "INFORMATION";
+    this.WARNING = "WARNING";
+    this.ERROR = "ERROR";
+  }
+
+  message.prototype.Type = new Type();
+
+  return new message();
+})();
