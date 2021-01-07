@@ -35,7 +35,7 @@ module.exports = SuiteCloudJestConfiguration.build({
 
 ## Usage
 
-These stubs are organized slightly differently than the stubs included with the [@oracle/suitecloud-unit-testing](https://www.npmjs.com/package/@oracle/suitecloud-unit-testing) package. Instead of separating each Object type into its own importable file, Object constructors can be accessed as members of the parent module. This way, multiple Objects of the same type can be mocked will different properties and mock return values.
+These stubs are organized slightly differently than the stubs included with the [@oracle/suitecloud-unit-testing](https://www.npmjs.com/package/@oracle/suitecloud-unit-testing) package. Instead of separating each Object type into its own importable file, Object constructors can be accessed as members of the parent module. This reduces the number of imports required and also allows multiple Objects of the same type to be mocked with different properties and mock return values.
 
 For example:
 
@@ -51,7 +51,6 @@ record.load.mockReturnValue(Record);
 Record.getValue.mockReturnValue('foo');
 
 // New way
-
 import record from 'N/record';
 
 jest.mock('N/record');
