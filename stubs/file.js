@@ -37,7 +37,8 @@ module.exports = (function () {
       return {
         each: (callback) => {
           for (const line of this) {
-            callback(line);
+            const shouldContinue = callback(line);
+            if (!shouldContinue) break;
           }
         }
       }
