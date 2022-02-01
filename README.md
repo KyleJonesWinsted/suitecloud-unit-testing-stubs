@@ -49,7 +49,9 @@ jest.mock('N/record/instance');
 
 record.load.mockReturnValue(Record);
 Record.getValue.mockReturnValue('foo');
+```
 
+```js
 // New way
 import record from 'N/record';
 

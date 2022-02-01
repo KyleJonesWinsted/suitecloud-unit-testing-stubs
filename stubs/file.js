@@ -16,6 +16,8 @@ module.exports = (function () {
 
   // Method
 
+  file.prototype.copy = function(options) {};
+
   file.prototype.create = function(options) {};
 
   file.prototype["delete"] = function(options) {};
@@ -28,7 +30,19 @@ module.exports = (function () {
 
   File.prototype.getContents = function() {};
 
-  File.prototype.lines.iterator = function() {};
+  File.prototype.lines = [];
+
+  Object.defineProperty(Array.prototype, 'iterator', {
+    value: function() {
+      return {
+        each: (callback) => {
+          for (const line of this) {
+            callback(line);
+          }
+        }
+      }
+    }
+  });
 
   File.prototype.resetStream = function() {};
 
@@ -55,6 +69,12 @@ module.exports = (function () {
     this.MAC_ROMAN = "MAC_ROMAN";
     this.GB2312 = "GB2312";
     this.BIG5 = "BIG5";
+  }
+
+  function NameConflictResolution() {
+    this.FAIL = 'FAIL'; 
+    this.OVERWRITE = 'OVERWRITE'; 
+    this.RENAME_TO_UNIQUE = 'RENAME_TO_UNIQUE'; 
   }
 
   function Type() {
@@ -102,6 +122,8 @@ module.exports = (function () {
   }
 
   file.prototype.Encoding = new Encoding();
+
+  file.prototype.NameConflictResolution = new NameConflictResolution();
 
   file.prototype.Type = new Type();
 
