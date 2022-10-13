@@ -2,13 +2,13 @@ module.exports = (function () {
 
   // N/transaction Module Members
 
-  var transaction = function() {};
+  var transaction = function () { };
 
   // Method
 
-  transaction.prototype.void = function(options) {};
+  transaction.prototype.void = function (options) { };
 
-  transaction.prototype.void.promise = function(options) {};
+  transaction.prototype.void.promise = function (options) { };
 
   // Enum
 
@@ -24,12 +24,11 @@ module.exports = (function () {
     this.CREDIT_CARD_CHARGE = "creditcardcharge";
     this.CREDIT_CARD_REFUND = "creditcardrefund";
     this.CREDIT_MEMO = "creditmemo";
-    this.CUSTOM_PURCHASE = "custompurchase";
-    this.CUSTOM_SALE = "customsale";
     this.CUSTOMER_DEPOSIT = "customerdeposit";
     this.CUSTOMER_PAYMENT = "customerpayment";
     this.CUSTOMER_PAYMENT_AUTHORIZATION = "customerpaymentauthorization";
     this.CUSTOMER_REFUND = "customerrefund";
+    this.CUSTOM_SALE = "customsale";
     this.CUSTOM_TRANSACTION = "customtransaction";
     this.DEPOSIT = "deposit";
     this.DEPOSIT_APPLICATION = "depositapplication";

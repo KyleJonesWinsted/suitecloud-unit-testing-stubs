@@ -2,63 +2,63 @@ module.exports = (function () {
 
   // N/workbook Module Members
 
-  var workbook = function() {};
+  var workbook = function () { };
 
   // Object
 
-  var AllSubNodesSelector = function() {};
+  var AllSubNodesSelector = function () { };
 
-  var Aspect = function() {};
+  var Aspect = function () { };
 
-  var Category = function() {};
+  var Category = function () { };
 
-  var ChartAxis = function() {};
+  var ChartAxis = function () { };
 
-  var ChartDefinition = function() {};
+  var ChartDefinition = function () { };
 
-  var ConditionalFilter = function() {};
+  var ConditionalFilter = function () { };
 
-  var DataDimension = function() {};
+  var DataDimension = function () { };
 
-  var DataDimensionItem = function() {};
+  var DataDimensionItem = function () { };
 
-  var DimensionSelector = function() {};
+  var DimensionSelector = function () { };
 
-  var DimensionSort = function() {};
+  var DimensionSort = function () { };
 
-  var Expression = function() {};
+  var Expression = function () { };
 
-  var FieldContext = function() {};
+  var FieldContext = function () { };
 
-  var Legend = function() {};
+  var Legend = function () { };
 
-  var LimitingFilter = function() {};
+  var LimitingFilter = function () { };
 
-  var Measure = function() {};
+  var Measure = function () { };
 
-  var MeasureSort = function() {};
+  var MeasureSort = function () { };
 
-  var PathSelector = function() {};
+  var PathSelector = function () { };
 
-  var PivotAxis = function() {};
+  var PivotAxis = function () { };
 
-  var PivotDimension = function() {};
+  var PivotDimension = function () { };
 
-  var Section = function() {};
+  var Section = function () { };
 
-  var Series = function() {};
+  var Series = function () { };
 
-  var Sort = function() {};
+  var Sort = function () { };
 
-  var SortDefinition = function() {};
+  var SortDefinition = function () { };
 
-  var TableColumn = function() {};
+  var TableColumn = function () { };
 
-  var TableDefinition = function() {};
+  var TableDefinition = function () { };
 
-  var TableFilter = function() {};
+  var TableFilter = function () { };
 
-  var Workbook = function() {};
+  var Workbook = function () { };
 
   workbook.prototype.AllSubNodesSelector = AllSubNodesSelector;
 
@@ -116,71 +116,71 @@ module.exports = (function () {
 
   // Method
 
-  workbook.prototype.create = function(options) {};
+  workbook.prototype.create = function (options) { };
 
-  workbook.prototype.createAllSubNodesSelector = function(options) {};
+  workbook.prototype.createAllSubNodesSelector = function (options) { };
 
-  workbook.prototype.createAspect = function(options) {};
+  workbook.prototype.createAspect = function (options) { };
 
-  workbook.prototype.createCategory = function(options) {};
+  workbook.prototype.createCategory = function (options) { };
 
-  workbook.prototype.createChartAxis = function(options) {};
+  workbook.prototype.createChartAxis = function (options) { };
 
-  workbook.prototype.createChartDefinition = function(options) {};
+  workbook.prototype.createChartDefinition = function (options) { };
 
-  workbook.prototype.createConditionalFilter = function(options) {};
+  workbook.prototype.createConditionalFilter = function (options) { };
 
-  workbook.prototype.createConstant = function(options) {};
+  workbook.prototype.createConstant = function (options) { };
 
-  workbook.prototype.createDataDimension = function(options) {};
+  workbook.prototype.createDataDimension = function (options) { };
 
-  workbook.prototype.createDataDimensionItem = function(options) {};
+  workbook.prototype.createDataDimensionItem = function (options) { };
 
-  workbook.prototype.createDimensionSelector = function(options) {};
+  workbook.prototype.createDimensionSelector = function (options) { };
 
-  workbook.prototype.createDimensionSort = function(options) {};
+  workbook.prototype.createDimensionSort = function (options) { };
 
-  workbook.prototype.createExpression = function(options) {};
+  workbook.prototype.createExpression = function (options) { };
 
-  workbook.prototype.createFieldContext = function(options) {};
+  workbook.prototype.createFieldContext = function (options) { };
 
-  workbook.prototype.createLegend = function(options) {};
+  workbook.prototype.createLegend = function (options) { };
 
-  workbook.prototype.createLimitingFilter = function(options) {};
+  workbook.prototype.createLimitingFilter = function (options) { };
 
-  workbook.prototype.createMeasure = function(options) {};
+  workbook.prototype.createMeasure = function (options) { };
 
-  workbook.prototype.createMeasureSort = function(options) {};
+  workbook.prototype.createMeasureSort = function (options) { };
 
-  workbook.prototype.createPathSelector = function(options) {};
+  workbook.prototype.createPathSelector = function (options) { };
 
-  workbook.prototype.createPivotAxis = function(options) {};
+  workbook.prototype.createPivotAxis = function (options) { };
 
-  workbook.prototype.createPivotDefinition = function(options) {};
+  workbook.prototype.createPivotDefinition = function (options) { };
 
-  workbook.prototype.createSection = function(options) {};
+  workbook.prototype.createSection = function (options) { };
 
-  workbook.prototype.createSeries = function(options) {};
+  workbook.prototype.createSeries = function (options) { };
 
-  workbook.prototype.createSort = function(options) {};
+  workbook.prototype.createSort = function (options) { };
 
-  workbook.prototype.createSortDefinition = function(options) {};
+  workbook.prototype.createSortDefinition = function (options) { };
 
-  workbook.prototype.createTableColumn = function(options) {};
+  workbook.prototype.createTableColumn = function (options) { };
 
-  workbook.prototype.createTableDefinition = function(options) {};
+  workbook.prototype.createTableDefinition = function (options) { };
 
-  workbook.prototype.createTableFilter = function(options) {};
+  workbook.prototype.createTableFilter = function (options) { };
 
-  workbook.prototype.list = function() {};
+  workbook.prototype.list = function () { };
 
-  workbook.prototype.load = function(options) {};
+  workbook.prototype.load = function (options) { };
 
   // Workbook Object Methods
 
-  Workbook.prototype.runTable = function(options) {};
+  Workbook.prototype.runTable = function (options) { };
 
-  Workbook.prototype.runTablePaged = function(options) {};
+  Workbook.prototype.runTablePaged = function (options) { };
 
   // Enum
 

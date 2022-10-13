@@ -2,29 +2,29 @@ module.exports = (function () {
 
   // N/certificateControl Module Members
 
-  var certificateControl = function() {};
+  var certificateControl = function () { };
 
   // Object
 
-  var Certificate = function() {};
+  var Certificate = function () { };
 
   certificateControl.prototype.Certificate = Certificate;
 
   // Method
 
-  certificateControl.prototype.findCertificates = function(options) {};
+  certificateControl.prototype.findCertificates = function (options) { };
 
-  certificateControl.prototype.findUsages = function(options) {};
+  certificateControl.prototype.findUsages = function (options) { };
 
-  certificateControl.prototype.createCertificate = function(options) {};
+  certificateControl.prototype.createCertificate = function (options) { };
 
-  certificateControl.prototype.deleteCertificate = function(options) {};
+  certificateControl.prototype.deleteCertificate = function (options) { };
 
-  certificateControl.prototype.loadCertificate = function(options) {};
+  certificateControl.prototype.loadCertificate = function (options) { };
 
   // Certificate Object Methods
 
-  Certificate.prototype.save = function() {};
+  Certificate.prototype.save = function () { };
 
   // Enum
 
@@ -35,17 +35,17 @@ module.exports = (function () {
   }
 
   function Operation() {
-    this.CONNECT = "connect";
-    this.DELETE = "delete";
-    this.FIND = "find";
-    this.GET = "get";
-    this.HEAD = "head";
-    this.POST = "post";
-    this.PUT = "put";
-    this.SIGN_STRING = "sign";
-    this.SIGN_XML = "signXml";
-    this.VERIFY_STRING = "verify";
-    this.VERIFY_XML = "verifyXmlSignature";
+    this.CONNECT = 'connect';
+    this.DELETE = 'delete';
+    this.FIND = 'find';
+    this.GET = 'get';
+    this.HEAD = 'head';
+    this.POST = 'post';
+    this.PUT = 'put';
+    this.SIGN_STRING = 'sign';
+    this.SIGN_XML = 'signXml';
+    this.VERIFY_STRING = 'verify';
+    this.VERIFY_XML = 'verifyXmlSignature';
   }
 
   function Operator() {

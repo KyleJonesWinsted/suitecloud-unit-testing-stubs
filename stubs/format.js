@@ -2,13 +2,13 @@ module.exports = (function () {
 
   // N/format Module Members
 
-  var format = function() {};
+  var format = function () { };
 
   // Method
-  
-  format.prototype.format = function() {};
 
-  format.prototype.parse = function() {};
+  format.prototype.format = function () { };
+
+  format.prototype.parse = function () { };
 
   function Type() {
     this.ADDRESS = "address";
@@ -52,8 +52,8 @@ module.exports = (function () {
     this.TEXT = "text";
     this.TEXTAREA = "textarea";
     this.TIME = "time";
-    this.TIMETRACK = "timetrack";
     this.TIMEOFDAY = "timeofday";
+    this.TIMETRACK = "timetrack";
     this.URL = "url";
   }
 
