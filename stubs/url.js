@@ -19,10 +19,11 @@ module.exports = (function () {
   // Enum
 
   function HostType() {
-    this.APPLICATION = 'APPLICATION';
-    this.FORM = 'FORM';
-    this.RESTLET = 'RESTLET';
-    this.SUITETALK = 'SUITETALK';
+    this.APPLICATION = "APPLICATION";
+    this.CUSTOMER_CENTER = "CUSTOMERCENTER";
+    this.FORM = "FORMS";
+    this.RESTLET = "RESTLETS";
+    this.SUITETALK = "SUITETALK";
   }
 
   url.prototype.HostType = new HostType();

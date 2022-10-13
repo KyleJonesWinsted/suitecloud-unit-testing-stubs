@@ -81,16 +81,16 @@ module.exports = (function () {
     this.DELETE = "DELETE";
     this.GET = "GET";
     this.HEAD = "HEAD";
-    this.PUT = "PUT";
     this.POST = "POST";
+    this.PUT = "PUT";
   }
 
   function RedirectType() {
-    this.MEDIA_ITEM = "MEDIA_ITEM";
+    this.MEDIA_ITEM = "MEDIAITEM";
     this.RECORD = "RECORD";
     this.RESTLET = "RESTLET";
     this.SUITELET = "SUITELET";
-    this.TASK_LINK = "TASK_LINK";
+    this.TASK_LINK = "TASKLINK";
   }
 
   http.prototype.CacheDuration = new CacheDuration();

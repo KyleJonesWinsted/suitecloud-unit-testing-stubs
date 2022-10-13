@@ -23,10 +23,10 @@ module.exports = (function () {
   // Enum
 
   function Type() {
-    this.CONFIRMATION = "CONFIRMATION";
-    this.INFORMATION = "INFORMATION";
-    this.WARNING = "WARNING";
-    this.ERROR = "ERROR";
+    this.CONFIRMATION = "0";
+    this.INFORMATION = "1";
+    this.WARNING = "2";
+    this.ERROR = "3";
   }
 
   message.prototype.Type = new Type();

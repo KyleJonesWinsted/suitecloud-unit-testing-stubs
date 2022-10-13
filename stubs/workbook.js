@@ -185,6 +185,7 @@ module.exports = (function () {
   // Enum
 
   function Aggregation() {
+    this.AVG = "AVG";
     this.COUNT = "COUNT";
     this.COUNT_DISTINCT = "COUNT_DISTINCT";
     this.MAX = "MAX";
@@ -206,54 +207,66 @@ module.exports = (function () {
   }
 
   function ConstantType() {
-    this.BOOLEAN = "booleanType";
-    this.CURRENCY = "currencyType";
-    this.DATE = "dateType";
-    this.DATE_TIME = "dateTimeType";
-    this.DURATION = "durationType";
-    this.NUMBER = "integerType";
-    this.TEXT = "textType";
+    this.BOOLEAN = "BOOLEAN";
+    this.CURRENCY = "CURRENCY";
+    this.DATE = "DATE";
+    this.DATE_TIME = "DATE_TIME";
+    this.DECIMAL = "DECIMAL";
+    this.DURATION = "DURATION";
+    this.INTEGER = "INTEGER";
+    this.NUMBER = "NUMBER";
+    this.RANGE = "RANGE";
+    this.RECORD_KEY = "RECORD_KEY";
+    this.TEXT = "TEXT";
   }
 
   function DateTimeHierarchy() {
-    this.MONTH_BASED = "month";
-    this.WEEK_BASED = "week";
+    this.MONTH_BASED = "MONTH_BASED";
+    this.WEEK_BASED = "WEEK_BASED";
   }
 
   function DateTimeProperty() {
-    this.DATE = "datetime";
-    this.DAY_OF_MONTH = "day";
-    this.DAY_OF_WEEK = "dayOfWeek";
-    this.MONTH = "month";
-    this.QUARTER = "quarter";
-    this.WEEK_OF_YEAR = "week";
-    this.YEAR = "year";
+    this.DATE = "DATE";
+    this.DAY_OF_MONTH = "DAY_OF_MONTH";
+    this.DAY_OF_WEEK = "DAY_OF_MONTH";
+    this.MONTH = "MONTH";
+    this.QUARTER = "QUARTER";
+    this.WEEK_OF_YEAR = "WEEK_OF_YEAR";
+    this.YEAR = "YEAR";
   }
 
   function ExpressionType() {
-    this.AND = "and";
-    this.ANY_IN_HIERARCHY = "anyInHierarchy";
-    this.ANY_OF = "anyOf";
-    this.BETWEEN = "between";
-    this.CHILD_OF = "childOf";
-    this.COMPARE = "compare";
-    this.CONSOLIDATE = "simpleConsolidate";
-    this.CURRENCY_CONVERSION = "currencyConversion";
-    this.DATE_RANGE_SELECTOR_ID = "dateRangeSelectorId";
-    this.DATE_SELECTOR_ID = "dateSelectorId";
-    this.DATE_TIME_PROPERTY = "dateTimeProperty";
-    this.EQUALS = "equals";
-    this.FIELD = "field";
-    this.HIERARCHY = "hierarchy";
-    this.HIERARCHY_TO_TEXT = "hierarchyToText";
-    this.IN_RANGE = "inRange";
-    this.IS_NULL = "isNull";
-    this.LAMBDA = "lambdaArgument";
-    this.NOT = "not";
-    this.OR = "or";
-    this.RECORD_DISPLAY_VALUE = "recordDisplayValue";
-    this.RECORD_KEY = "recordKey";
-    this.TRUNCATE_DATE_TIME = "truncateDateTime";
+    this.AND = "AND";
+    this.ANY_OF = "ANY_OF";
+    this.BETWEEN = "BETWEEN";
+    this.CHILD_OF = "CHILD_OF";
+    this.COMPARE = "COMPARE";
+    this.CONSTANT = "CONSTANT";
+    this.CURRENCY_CONVERSION = "CURRENCY_CONVERSION";
+    this.DATASET_COLUMN = "DATASET_COLUMN";
+    this.DATE_RANGE_SELECTOR_ID = "DATE_RANGE_SELECTOR_ID";
+    this.DATE_SELECTOR_ID = "DATE_SELECTOR_ID";
+    this.DATE_TIME_PROPERTY = "DATE_TIME_PROPERTY";
+    this.DIVIDE = "DIVIDE";
+    this.EQUALS = "EQUALS";
+    this.FIELD = "FIELD";
+    this.HIERARCHY = "HIERARCHY";
+    this.HIERARCHY_TO_TEXT = "HIERARCHY_TO_TEXT";
+    this.IF = "IF";
+    this.IN_RANGE = "IN_RANGE";
+    this.IS_NULL = "IS_NULL";
+    this.LAMBDA = "LAMBDA";
+    this.MEASURE_VALUE = "MEASURE_VALUE";
+    this.MINUS = "MINUS";
+    this.MULTIPLY = "MULTIPLY";
+    this.NOT = "NOT";
+    this.OR = "OR";
+    this.PLUS = "PLUS";
+    this.RECORD_DISPLAY_VALUE = "RECORD_DISPLAY_VALUE";
+    this.RECORD_KEY = "RECORD_KEY";
+    this.SIMPLE_CONSOLIDATE = "SIMPLE_CONSOLIDATE";
+    this.TRANSLATE = "TRANSLATE";
+    this.TRUNCATE_DATE_TIME = "TRUNCATE_DATE_TIME";
   }
 
   function Stacking() {

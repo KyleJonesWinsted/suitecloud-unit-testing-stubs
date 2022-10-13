@@ -11,16 +11,16 @@ module.exports = (function () {
   // Enum
 
   function Type() {
-    this.USER_PREFERENCES = 'USERPREFERENCES';
-    this.COMPANY_INFORMATION = 'COMPANYINFORMATION';
-    this.COMPANY_PREFERENCES = 'COMPANYPREFERENCES';
-    this.ACCOUNTING_PREFERENCES = 'ACCOUNTINGPREFERENCES';
-    this.ACCOUNTING_PERIODS = 'ACCOUNTINGPERIODS';
-    this.MANUFACTURING_PREFERENCES = 'MANUFACTURINGPREFERENCES';
-    this.TAX_PERIODS = 'TAXPERIODS';
-    this.FEATURES = 'FEATURES';
-    this.TIME_POST = 'TIMEPOST';
-    this.TIME_VOID = 'TIMEVOID';
+    this.USER_PREFERENCES = "userpreferences";
+    this.COMPANY_INFORMATION = "companyinformation";
+    this.COMPANY_PREFERENCES = "companypreferences";
+    this.ACCOUNTING_PREFERENCES = "accountingpreferences";
+    this.MANUFACTURING_PREFERENCES = "manufacturingpreferences";
+    this.ACCOUNTING_PERIODS = "accountingperiods";
+    this.TAX_PERIODS = "taxperiods";
+    this.FEATURES = "companyfeatures";
+    this.TIME_POST = "timepost";
+    this.TIME_VOID = "timevoid";
   }
 
   config.prototype.Type = new Type();

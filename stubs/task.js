@@ -145,37 +145,37 @@ module.exports = (function () {
   // Enum
 
   function ActionCondition() {
-    this.ALL_QUALIFIED_INSTANCES = "ALL_QUALIFIED_INSTANCES";
+    this.ALL_QUALIFIED_INSTANCES = {}
   }
 
   function DedupeEntityType() {
-    this.CUSTOMER = "CUSTOMER";
     this.CONTACT = "CONTACT";
-    this.VENDOR = "VENDOR";
-    this.PARTNER = "PARTNER";
+    this.CUSTOMER = "CUSTOMER";
     this.LEAD = "LEAD";
+    this.PARTNER = "PARTNER";
     this.PROSPECT = "PROSPECT";
+    this.VENDOR = "VENDOR";
   }
 
   function DedupeMode() {
-    this.MERGE = "MERGE";
     this.DELETE = "DELETE";
-    this.MAKE_MASTER_PARENT = "MAKE_MASTER_PARENT";
     this.MARK_AS_NOT_DUPES = "MARK_AS_NOT_DUPES";
+    this.MAKE_MASTER_PARENT = "MAKE_MASTER_PARENT";
+    this.MERGE = "MERGE";
   }
 
   function MapReduceStage() {
     this.GET_INPUT = "GET_INPUT";
     this.MAP = "MAP";
-    this.SHUFFLE = "SHUFFLE";
     this.REDUCE = "REDUCE";
+    this.SHUFFLE = "SHUFFLE";
     this.SUMMARIZE = "SUMMARIZE";
   }
 
   function MasterSelectionMode() {
     this.CREATED_EARLIEST = "CREATED_EARLIEST";
-    this.MOST_RECENT_ACTIVITY = "MOST_RECENT_ACTIVITY";
     this.MOST_POPULATED_FIELDS = "MOST_POPULATED_FIELDS";
+    this.MOST_RECENT_ACTIVITY = "MOST_RECENT_ACTIVITY";
     this.SELECT_BY_ID = "SELECT_BY_ID";
   }
 

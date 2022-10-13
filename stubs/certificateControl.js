@@ -35,24 +35,24 @@ module.exports = (function () {
   }
 
   function Operation() {
-    this.CONNECT = 'CONNECT';
-    this.DELETE = 'DELETE';
-    this.FIND = 'FIND';
-    this.GET = 'GET';
-    this.HEAD = 'HEAD';
-    this.POST = 'POST';
-    this.PUT = 'PUT';
-    this.SIGN_STRING = 'SIGNSTRING';
-    this.SIGN_XML = 'SIGNXML';
-    this.VERIFY_STRING = 'VERIFYSTRING';
-    this.VERIFY_XML = 'VERIFYXML';
+    this.CONNECT = "connect";
+    this.DELETE = "delete";
+    this.FIND = "find";
+    this.GET = "get";
+    this.HEAD = "head";
+    this.POST = "post";
+    this.PUT = "put";
+    this.SIGN_STRING = "sign";
+    this.SIGN_XML = "signXml";
+    this.VERIFY_STRING = "verify";
+    this.VERIFY_XML = "verifyXmlSignature";
   }
 
   function Operator() {
-    this.CONTAINS = "CONTAINS";
-    this.END_WITH = "ENDSWITH";
-    this.EQUALS = "EQUALS";
-    this.STARTS_WITH = "STARTSWITH";
+    this.CONTAINS = "contains";
+    this.ENDS_WITH = "endswith";
+    this.EQUALS = "equals";
+    this.STARTS_WITH = "startswith";
   }
 
   certificateControl.prototype.Type = new Type();
