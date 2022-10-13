@@ -2,63 +2,63 @@ module.exports = (function () {
 
   // N/workbook Module Members
 
-  var workbook = function() {};
+  var workbook = function () { };
 
   // Object
 
-  var AllSubNodesSelector = function() {};
+  var AllSubNodesSelector = function () { };
 
-  var Aspect = function() {};
+  var Aspect = function () { };
 
-  var Category = function() {};
+  var Category = function () { };
 
-  var ChartAxis = function() {};
+  var ChartAxis = function () { };
 
-  var ChartDefinition = function() {};
+  var ChartDefinition = function () { };
 
-  var ConditionalFilter = function() {};
+  var ConditionalFilter = function () { };
 
-  var DataDimension = function() {};
+  var DataDimension = function () { };
 
-  var DataDimensionItem = function() {};
+  var DataDimensionItem = function () { };
 
-  var DimensionSelector = function() {};
+  var DimensionSelector = function () { };
 
-  var DimensionSort = function() {};
+  var DimensionSort = function () { };
 
-  var Expression = function() {};
+  var Expression = function () { };
 
-  var FieldContext = function() {};
+  var FieldContext = function () { };
 
-  var Legend = function() {};
+  var Legend = function () { };
 
-  var LimitingFilter = function() {};
+  var LimitingFilter = function () { };
 
-  var Measure = function() {};
+  var Measure = function () { };
 
-  var MeasureSort = function() {};
+  var MeasureSort = function () { };
 
-  var PathSelector = function() {};
+  var PathSelector = function () { };
 
-  var PivotAxis = function() {};
+  var PivotAxis = function () { };
 
-  var PivotDimension = function() {};
+  var PivotDimension = function () { };
 
-  var Section = function() {};
+  var Section = function () { };
 
-  var Series = function() {};
+  var Series = function () { };
 
-  var Sort = function() {};
+  var Sort = function () { };
 
-  var SortDefinition = function() {};
+  var SortDefinition = function () { };
 
-  var TableColumn = function() {};
+  var TableColumn = function () { };
 
-  var TableDefinition = function() {};
+  var TableDefinition = function () { };
 
-  var TableFilter = function() {};
+  var TableFilter = function () { };
 
-  var Workbook = function() {};
+  var Workbook = function () { };
 
   workbook.prototype.AllSubNodesSelector = AllSubNodesSelector;
 
@@ -116,71 +116,71 @@ module.exports = (function () {
 
   // Method
 
-  workbook.prototype.create = function(options) {};
+  workbook.prototype.create = function (options) { };
 
-  workbook.prototype.createAllSubNodesSelector = function(options) {};
+  workbook.prototype.createAllSubNodesSelector = function (options) { };
 
-  workbook.prototype.createAspect = function(options) {};
+  workbook.prototype.createAspect = function (options) { };
 
-  workbook.prototype.createCategory = function(options) {};
+  workbook.prototype.createCategory = function (options) { };
 
-  workbook.prototype.createChartAxis = function(options) {};
+  workbook.prototype.createChartAxis = function (options) { };
 
-  workbook.prototype.createChartDefinition = function(options) {};
+  workbook.prototype.createChartDefinition = function (options) { };
 
-  workbook.prototype.createConditionalFilter = function(options) {};
+  workbook.prototype.createConditionalFilter = function (options) { };
 
-  workbook.prototype.createConstant = function(options) {};
+  workbook.prototype.createConstant = function (options) { };
 
-  workbook.prototype.createDataDimension = function(options) {};
+  workbook.prototype.createDataDimension = function (options) { };
 
-  workbook.prototype.createDataDimensionItem = function(options) {};
+  workbook.prototype.createDataDimensionItem = function (options) { };
 
-  workbook.prototype.createDimensionSelector = function(options) {};
+  workbook.prototype.createDimensionSelector = function (options) { };
 
-  workbook.prototype.createDimensionSort = function(options) {};
+  workbook.prototype.createDimensionSort = function (options) { };
 
-  workbook.prototype.createExpression = function(options) {};
+  workbook.prototype.createExpression = function (options) { };
 
-  workbook.prototype.createFieldContext = function(options) {};
+  workbook.prototype.createFieldContext = function (options) { };
 
-  workbook.prototype.createLegend = function(options) {};
+  workbook.prototype.createLegend = function (options) { };
 
-  workbook.prototype.createLimitingFilter = function(options) {};
+  workbook.prototype.createLimitingFilter = function (options) { };
 
-  workbook.prototype.createMeasure = function(options) {};
+  workbook.prototype.createMeasure = function (options) { };
 
-  workbook.prototype.createMeasureSort = function(options) {};
+  workbook.prototype.createMeasureSort = function (options) { };
 
-  workbook.prototype.createPathSelector = function(options) {};
+  workbook.prototype.createPathSelector = function (options) { };
 
-  workbook.prototype.createPivotAxis = function(options) {};
+  workbook.prototype.createPivotAxis = function (options) { };
 
-  workbook.prototype.createPivotDefinition = function(options) {};
+  workbook.prototype.createPivotDefinition = function (options) { };
 
-  workbook.prototype.createSection = function(options) {};
+  workbook.prototype.createSection = function (options) { };
 
-  workbook.prototype.createSeries = function(options) {};
+  workbook.prototype.createSeries = function (options) { };
 
-  workbook.prototype.createSort = function(options) {};
+  workbook.prototype.createSort = function (options) { };
 
-  workbook.prototype.createSortDefinition = function(options) {};
+  workbook.prototype.createSortDefinition = function (options) { };
 
-  workbook.prototype.createTableColumn = function(options) {};
+  workbook.prototype.createTableColumn = function (options) { };
 
-  workbook.prototype.createTableDefinition = function(options) {};
+  workbook.prototype.createTableDefinition = function (options) { };
 
-  workbook.prototype.createTableFilter = function(options) {};
+  workbook.prototype.createTableFilter = function (options) { };
 
-  workbook.prototype.list = function() {};
+  workbook.prototype.list = function () { };
 
-  workbook.prototype.load = function(options) {};
+  workbook.prototype.load = function (options) { };
 
   // Workbook Object Methods
 
-  Workbook.prototype.runTable = function(options) {};
+  Workbook.prototype.runTable = function (options) { };
 
-  Workbook.prototype.runTablePaged = function(options) {};
+  Workbook.prototype.runTablePaged = function (options) { };
 
   // Enum
 
@@ -206,13 +206,13 @@ module.exports = (function () {
   }
 
   function ConstantType() {
-    this.BOOLEAN = "booleanType";
-    this.CURRENCY = "currencyType";
-    this.DATE = "dateType";
-    this.DATE_TIME = "dateTimeType";
-    this.DURATION = "durationType";
-    this.NUMBER = "integerType";
-    this.TEXT = "textType";
+    this.BOOLEAN = "BOOLEAN";
+    this.CURRENCY = "CURRENCY";
+    this.DATE = "DATE";
+    this.DATE_TIME = "DATE_TIME";
+    this.DURATION = "DURATION";
+    this.NUMBER = "NUMBER";
+    this.TEXT = "TEXT";
   }
 
   function DateTimeHierarchy() {
@@ -221,39 +221,39 @@ module.exports = (function () {
   }
 
   function DateTimeProperty() {
-    this.DATE = "datetime";
-    this.DAY_OF_MONTH = "day";
-    this.DAY_OF_WEEK = "dayOfWeek";
-    this.MONTH = "month";
-    this.QUARTER = "quarter";
-    this.WEEK_OF_YEAR = "week";
-    this.YEAR = "year";
+    this.DATE = "DATE";
+    this.DAY_OF_MONTH = "DAY_OF_MONTH";
+    this.DAY_OF_WEEK = "DAY_OF_WEEK";
+    this.MONTH = "MONTH";
+    this.QUARTER = "QUARTER";
+    this.WEEK_OF_YEAR = "WEEK_OF_YEAR";
+    this.YEAR = "YEAR";
   }
 
   function ExpressionType() {
-    this.AND = "and";
-    this.ANY_IN_HIERARCHY = "anyInHierarchy";
-    this.ANY_OF = "anyOf";
-    this.BETWEEN = "between";
-    this.CHILD_OF = "childOf";
-    this.COMPARE = "compare";
-    this.CONSOLIDATE = "simpleConsolidate";
-    this.CURRENCY_CONVERSION = "currencyConversion";
-    this.DATE_RANGE_SELECTOR_ID = "dateRangeSelectorId";
-    this.DATE_SELECTOR_ID = "dateSelectorId";
-    this.DATE_TIME_PROPERTY = "dateTimeProperty";
-    this.EQUALS = "equals";
-    this.FIELD = "field";
-    this.HIERARCHY = "hierarchy";
-    this.HIERARCHY_TO_TEXT = "hierarchyToText";
-    this.IN_RANGE = "inRange";
-    this.IS_NULL = "isNull";
-    this.LAMBDA = "lambdaArgument";
-    this.NOT = "not";
-    this.OR = "or";
-    this.RECORD_DISPLAY_VALUE = "recordDisplayValue";
-    this.RECORD_KEY = "recordKey";
-    this.TRUNCATE_DATE_TIME = "truncateDateTime";
+    this.AND = "AND";
+    this.ANY_IN_HIERARCHY = "ANY_IN_HIERARCHY";
+    this.ANY_OF = "ANY_OF";
+    this.BETWEEN = "BETWEEN";
+    this.CHILD_OF = "CHILD_OF";
+    this.COMPARE = "COMPARE";
+    this.CONSOLIDATE = "CONSOLIDATE";
+    this.CURRENCY_CONVERSION = "CURRENCY_CONVERSION";
+    this.DATE_RANGE_SELECTOR_ID = "DATE_RANGE_SELECTOR_ID";
+    this.DATE_SELECTOR_ID = "DATE_SELECTOR_ID";
+    this.DATE_TIME_PROPERTY = "DATE_TIME_PROPERTY";
+    this.EQUALS = "EQUALS";
+    this.FIELD = "FIELD";
+    this.HIERARCHY = "HIERARCHY";
+    this.HIERARCHY_TO_TEXT = "HIERARCHY_TO_TEXT";
+    this.IN_RANGE = "IN_RANGE";
+    this.IS_NULL = "IS_NULL";
+    this.LAMBDA = "LAMBDA";
+    this.NOT = "NOT";
+    this.OR = "OR";
+    this.RECORD_DISPLAY_VALUE = "RECORD_DISPLAY_VALUE";
+    this.RECORD_KEY = "RECORD_KEY";
+    this.TRUNCATE_DATE_TIME = "TRUNCATE_DATE_TIME";
   }
 
   function Stacking() {

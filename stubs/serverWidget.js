@@ -2,29 +2,29 @@ module.exports = (function () {
 
   // N/ui/serverWidget Module Members
 
-  var serverWidget = function() {};
+  var serverWidget = function () { };
 
   // Object
 
-  var Assistant = function() {};
+  var Assistant = function () { };
 
-  var AssistantStep = function() {};
+  var AssistantStep = function () { };
 
-  var Button = function () {};
+  var Button = function () { };
 
-  var Field = function() {};
+  var Field = function () { };
 
-  var FieldGroup = function() {};
+  var FieldGroup = function () { };
 
-  var Form = function() {};
+  var Form = function () { };
 
-  var List = function() {};
+  var List = function () { };
 
-  var ListColumn = function() {};
+  var ListColumn = function () { };
 
-  var Sublist = function() {};
+  var Sublist = function () { };
 
-  var Tab = function() {};
+  var Tab = function () { };
 
   serverWidget.prototype.Assistant = Assistant;
 
@@ -48,182 +48,182 @@ module.exports = (function () {
 
   // Method
 
-  serverWidget.prototype.createAssistant = function(options) {};
+  serverWidget.prototype.createAssistant = function (options) { };
 
-  serverWidget.prototype.createForm = function(options) {};
+  serverWidget.prototype.createForm = function (options) { };
 
-  serverWidget.prototype.createList = function(options) {};
+  serverWidget.prototype.createList = function (options) { };
 
   // Assistant Object Methods
 
-  Assistant.prototype.addField = function(options) {};
+  Assistant.prototype.addField = function (options) { };
 
-  Assistant.prototype.addFieldGroup = function(options) {};
+  Assistant.prototype.addFieldGroup = function (options) { };
 
-  Assistant.prototype.addStep = function(options) {};
+  Assistant.prototype.addStep = function (options) { };
 
-  Assistant.prototype.addSublist = function(options) {};
+  Assistant.prototype.addSublist = function (options) { };
 
-  Assistant.prototype.getField = function(options) {};
+  Assistant.prototype.getField = function (options) { };
 
-  Assistant.prototype.getFieldGroup = function(options) {};
+  Assistant.prototype.getFieldGroup = function (options) { };
 
-  Assistant.prototype.getFieldGroupIds = function() {};
+  Assistant.prototype.getFieldGroupIds = function () { };
 
-  Assistant.prototype.getFieldIds = function() {};
+  Assistant.prototype.getFieldIds = function () { };
 
-  Assistant.prototype.getFieldIdsByFieldGroup = function(fieldGroup) {};
+  Assistant.prototype.getFieldIdsByFieldGroup = function (fieldGroup) { };
 
-  Assistant.prototype.getLastAction = function() {};
+  Assistant.prototype.getLastAction = function () { };
 
-  Assistant.prototype.getLastStep = function() {};
+  Assistant.prototype.getLastStep = function () { };
 
-  Assistant.prototype.getNextStep = function() {};
+  Assistant.prototype.getNextStep = function () { };
 
-  Assistant.prototype.getStep = function(options) {};
+  Assistant.prototype.getStep = function (options) { };
 
-  Assistant.prototype.getStepCount = function() {};
+  Assistant.prototype.getStepCount = function () { };
 
-  Assistant.prototype.getSteps = function() {};
+  Assistant.prototype.getSteps = function () { };
 
-  Assistant.prototype.getSublist = function(options) {};
+  Assistant.prototype.getSublist = function (options) { };
 
-  Assistant.prototype.getSublistIds = function() {};
+  Assistant.prototype.getSublistIds = function () { };
 
-  Assistant.prototype.hasErrorHtml = function() {};
+  Assistant.prototype.hasErrorHtml = function () { };
 
-  Assistant.prototype.isFinished = function() {};
+  Assistant.prototype.isFinished = function () { };
 
-  Assistant.prototype.sendRedirect = function() {};
+  Assistant.prototype.sendRedirect = function () { };
 
-  Assistant.prototype.setSplash = function(options) {};
+  Assistant.prototype.setSplash = function (options) { };
 
-  Assistant.prototype.updateDefaultValues = function(values) {};
+  Assistant.prototype.updateDefaultValues = function (values) { };
 
   // AssistantStep Object Methods
 
-  AssistantStep.prototype.getFieldIds = function() {};
+  AssistantStep.prototype.getFieldIds = function () { };
 
-  AssistantStep.prototype.getLineCount = function(options) {};
+  AssistantStep.prototype.getLineCount = function (options) { };
 
-  AssistantStep.prototype.getSublistValue = function(options) {};
+  AssistantStep.prototype.getSublistValue = function (options) { };
 
-  AssistantStep.prototype.getSubmittedSublistIds = function() {};
+  AssistantStep.prototype.getSubmittedSublistIds = function () { };
 
-  AssistantStep.prototype.getValue = function(options) {};
+  AssistantStep.prototype.getValue = function (options) { };
 
   // Field Object Methods
 
-  Field.prototype.addSelectOption = function(options) {};
+  Field.prototype.addSelectOption = function (options) { };
 
-  Field.prototype.getSelectOptions = function(options) {};
+  Field.prototype.getSelectOptions = function (options) { };
 
-  Field.prototype.setHelpText = function(options) {};
+  Field.prototype.setHelpText = function (options) { };
 
-  Field.prototype.updateBreakType = function(options) {};
+  Field.prototype.updateBreakType = function (options) { };
 
-  Field.prototype.updateDisplaySize = function(options) {};
+  Field.prototype.updateDisplaySize = function (options) { };
 
-  Field.prototype.updateDisplayType = function(options) {};
+  Field.prototype.updateDisplayType = function (options) { };
 
-  Field.prototype.updateLayoutType = function(options) {};
+  Field.prototype.updateLayoutType = function (options) { };
 
   // Form Object Methods
 
-  Form.prototype.addButton = function(options) {};
+  Form.prototype.addButton = function (options) { };
 
-  Form.prototype.addCredentialField = function(options) {};
+  Form.prototype.addCredentialField = function (options) { };
 
-  Form.prototype.addField = function(options) {};
+  Form.prototype.addField = function (options) { };
 
-  Form.prototype.addFieldGroup = function(options) {};
+  Form.prototype.addFieldGroup = function (options) { };
 
-  Form.prototype.addPageInitMessage = function(options) {};
+  Form.prototype.addPageInitMessage = function (options) { };
 
-  Form.prototype.addPageLink = function(options) {};
+  Form.prototype.addPageLink = function (options) { };
 
-  Form.prototype.addResetButton = function(options) {};
+  Form.prototype.addResetButton = function (options) { };
 
-  Form.prototype.addSecretKeyField = function(options) {};
+  Form.prototype.addSecretKeyField = function (options) { };
 
-  Form.prototype.addSublist = function(options) {};
+  Form.prototype.addSublist = function (options) { };
 
-  Form.prototype.addSubmitButton = function(options) {};
+  Form.prototype.addSubmitButton = function (options) { };
 
-  Form.prototype.addSubtab = function(options) {};
+  Form.prototype.addSubtab = function (options) { };
 
-  Form.prototype.addTab = function(options) {};
+  Form.prototype.addTab = function (options) { };
 
-  Form.prototype.getButton = function(options) {};
+  Form.prototype.getButton = function (options) { };
 
-  Form.prototype.getField = function(options) {};
+  Form.prototype.getField = function (options) { };
 
-  Form.prototype.getSublist = function(options) {};
+  Form.prototype.getSublist = function (options) { };
 
-  Form.prototype.getSubtab = function(options) {};
+  Form.prototype.getSubtab = function (options) { };
 
-  Form.prototype.getTab = function(options) {};
+  Form.prototype.getTab = function (options) { };
 
-  Form.prototype.getTabs = function() {};
+  Form.prototype.getTabs = function () { };
 
-  Form.prototype.insertField = function(options) {};
+  Form.prototype.insertField = function (options) { };
 
-  Form.prototype.insertSubtab = function(options) {};
+  Form.prototype.insertSubtab = function (options) { };
 
-  Form.prototype.insertTab = function(options) {};
+  Form.prototype.insertTab = function (options) { };
 
-  Form.prototype.removeButton = function(options) {};
+  Form.prototype.removeButton = function (options) { };
 
-  Form.prototype.updateDefaultValues = function(options) {};
+  Form.prototype.updateDefaultValues = function (options) { };
 
   // List Object Methods
 
-  List.prototype.addButton = function(options) {};
+  List.prototype.addButton = function (options) { };
 
-  List.prototype.addColumn = function(options) {};
+  List.prototype.addColumn = function (options) { };
 
-  List.prototype.addEditColumn = function(options) {};
+  List.prototype.addEditColumn = function (options) { };
 
-  List.prototype.addPageLink = function(options) {};
+  List.prototype.addPageLink = function (options) { };
 
-  List.prototype.addRow = function(options) {};
+  List.prototype.addRow = function (options) { };
 
-  List.prototype.addRows = function(options) {};
+  List.prototype.addRows = function (options) { };
 
   // ListColumn Object Methods
 
-  ListColumn.prototype.addParamToURL = function(options) {};
+  ListColumn.prototype.addParamToURL = function (options) { };
 
-  ListColumn.prototype.setURL = function(options) {};
+  ListColumn.prototype.setURL = function (options) { };
 
   // Sublist Object Methods
 
-  Sublist.prototype.addButton = function(options) {};
+  Sublist.prototype.addButton = function (options) { };
 
-  Sublist.prototype.addField = function(options) {};
+  Sublist.prototype.addField = function (options) { };
 
-  Sublist.prototype.addMarkAllButtons = function() {};
+  Sublist.prototype.addMarkAllButtons = function () { };
 
-  Sublist.prototype.addRefreshButtons = function() {};
+  Sublist.prototype.addRefreshButtons = function () { };
 
-  Sublist.prototype.getField = function(options) {};
+  Sublist.prototype.getField = function (options) { };
 
-  Sublist.prototype.getSublistValue = function(options) {};
+  Sublist.prototype.getSublistValue = function (options) { };
 
-  Sublist.prototype.setSublistValue = function(options) {};
+  Sublist.prototype.setSublistValue = function (options) { };
 
-  Sublist.prototype.updateTotallingFieldId = function(options) {};
+  Sublist.prototype.updateTotallingFieldId = function (options) { };
 
-  Sublist.prototype.updateUniqueFieldId = function(options) {};
+  Sublist.prototype.updateUniqueFieldId = function (options) { };
 
   // Enum
 
   function AssistantSubmitAction() {
-    this.BACK = "BACK";
-    this.CANCEL = "CANCEL";
-    this.FINISH = "FINISH";
-    this.JUMP = "JUMP";
-    this.NEXT = "NEXT";
+    this.BACK = "back";
+    this.CANCEL = "cancel";
+    this.FINISH = "finish";
+    this.JUMP = "jump";
+    this.NEXT = "next";
   }
 
   function FieldBreakType() {
@@ -292,10 +292,10 @@ module.exports = (function () {
   }
 
   function ListStyle() {
-    this.GRID = "GRID";
-    this.REPORT = "REPORT";
-    this.PLAIN = "PLAIN";
-    this.NORMAL = "NORMAL";
+    this.GRID = "grid";
+    this.REPORT = "report";
+    this.PLAIN = "plain";
+    this.NORMAL = "normal";
   }
 
   function SublistDisplayType() {
