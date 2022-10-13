@@ -1,6 +1,6 @@
 {
   "name": "suitecloud-unit-testing-stubs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Custom stubs for all Suitescript 2.x modules. Used in conjunction with the @oracle/suitecloud-unit-testing package.",
   "main": "SuiteCloudJestStubs.js",
   "author": "Kyle Jones <kylejoneswinsted@gmail.com>",
