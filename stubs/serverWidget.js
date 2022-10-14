@@ -243,41 +243,41 @@ module.exports = (function () {
   }
 
   function FieldLayoutType() {
-    this.STARTROW = "STARTROW";
-    this.MIDROW = "MIDROW";
     this.ENDROW = "ENDROW";
-    this.OUTSIDE = "OUTSIDE";
-    this.OUTSIDEBELOW = "OUTSIDEBELOW";
-    this.OUTSIDEABOVE = "OUTSIDEABOVE";
+    this.MIDROW = "MIDROW";
     this.NORMAL = "NORMAL";
+    this.OUTSIDE = "OUTSIDE";
+    this.OUTSIDEABOVE = "OUTSIDEABOVE";
+    this.OUTSIDEBELOW = "OUTSIDEBELOW";
+    this.STARTROW = "STARTROW";
   }
 
   function FieldType() {
     this.CHECKBOX = "CHECKBOX";
-    this.LONGTEXT = "LONGTEXT";
     this.CURRENCY = "CURRENCY";
-    this.MULTISELECT = "MULTISELECT";
     this.DATE = "DATE";
-    this.PASSWORD = "PASSWORD";
     this.DATETIME = "DATETIME";
-    this.PERCENT = "PERCENT";
     this.DATETIMETZ = "DATETIMETZ";
-    this.PHONE = "PHONE";
     this.EMAIL = "EMAIL";
-    this.SELECT = "SELECT";
     this.FILE = "FILE";
-    this.RADIO = "RADIO";
     this.FLOAT = "FLOAT";
-    this.RICHTEXT = "RICHTEXT";
     this.HELP = "HELP";
-    this.TEXT = "TEXT";
-    this.INLINEHTML = "INLINEHTML";
-    this.TEXTAREA = "TEXTAREA";
-    this.INTEGER = "INTEGER";
-    this.TIMEOFDAY = "TIMEOFDAY";
     this.IMAGE = "IMAGE";
-    this.URL = "URL";
+    this.INLINEHTML = "INLINEHTML";
+    this.INTEGER = "INTEGER";
     this.LABEL = "LABEL";
+    this.LONGTEXT = "LONGTEXT";
+    this.MULTISELECT = "MULTISELECT";
+    this.PASSWORD = "PASSWORD";
+    this.PERCENT = "PERCENT";
+    this.PHONE = "PHONE";
+    this.RADIO = "RADIO";
+    this.RICHTEXT = "RICHTEXT";
+    this.SELECT = "SELECT";
+    this.TEXTAREA = "TEXTAREA";
+    this.TEXT = "TEXT";
+    this.TIMEOFDAY = "TIMEOFDAY";
+    this.URL = "URL";
   }
 
   function FormPageLinkType() {
@@ -299,13 +299,13 @@ module.exports = (function () {
   }
 
   function SublistDisplayType() {
-    this.NORMAL = "NORMAL";
     this.HIDDEN = "HIDDEN";
+    this.NORMAL = "NORMAL";
   }
 
   function SublistType() {
-    this.INLINEEDITOR = "INLINEEDITOR";
     this.EDITOR = "EDITOR";
+    this.INLINEEDITOR = "INLINEEDITOR";
     this.LIST = "LIST";
     this.STATICLIST = "STATICLIST";
   }

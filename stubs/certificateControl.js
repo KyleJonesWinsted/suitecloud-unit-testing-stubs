@@ -42,15 +42,15 @@ module.exports = (function () {
     this.HEAD = 'head';
     this.POST = 'post';
     this.PUT = 'put';
-    this.SIGN_STRING = 'signstring';
-    this.SIGN_XML = 'signxml';
-    this.VERIFY_STRING = 'verifystring';
-    this.VERIFY_XML = 'verifyxml';
+    this.SIGN_STRING = 'sign';
+    this.SIGN_XML = 'signXml';
+    this.VERIFY_STRING = 'verify';
+    this.VERIFY_XML = 'verifyXmlSignature';
   }
 
   function Operator() {
     this.CONTAINS = "contains";
-    this.END_WITH = "endswith";
+    this.ENDS_WITH = "endswith";
     this.EQUALS = "equals";
     this.STARTS_WITH = "startswith";
   }

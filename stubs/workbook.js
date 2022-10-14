@@ -185,6 +185,7 @@ module.exports = (function () {
   // Enum
 
   function Aggregation() {
+    this.AVG = "AVG";
     this.COUNT = "COUNT";
     this.COUNT_DISTINCT = "COUNT_DISTINCT";
     this.MAX = "MAX";
@@ -210,20 +211,24 @@ module.exports = (function () {
     this.CURRENCY = "CURRENCY";
     this.DATE = "DATE";
     this.DATE_TIME = "DATE_TIME";
+    this.DECIMAL = "DECIMAL";
     this.DURATION = "DURATION";
+    this.INTEGER = "INTEGER";
     this.NUMBER = "NUMBER";
+    this.RANGE = "RANGE";
+    this.RECORD_KEY = "RECORD_KEY";
     this.TEXT = "TEXT";
   }
 
   function DateTimeHierarchy() {
-    this.MONTH_BASED = "month";
-    this.WEEK_BASED = "week";
+    this.MONTH_BASED = "MONTH_BASED";
+    this.WEEK_BASED = "WEEK_BASED";
   }
 
   function DateTimeProperty() {
     this.DATE = "DATE";
     this.DAY_OF_MONTH = "DAY_OF_MONTH";
-    this.DAY_OF_WEEK = "DAY_OF_WEEK";
+    this.DAY_OF_WEEK = "DAY_OF_MONTH";
     this.MONTH = "MONTH";
     this.QUARTER = "QUARTER";
     this.WEEK_OF_YEAR = "WEEK_OF_YEAR";
@@ -232,27 +237,35 @@ module.exports = (function () {
 
   function ExpressionType() {
     this.AND = "AND";
-    this.ANY_IN_HIERARCHY = "ANY_IN_HIERARCHY";
     this.ANY_OF = "ANY_OF";
     this.BETWEEN = "BETWEEN";
     this.CHILD_OF = "CHILD_OF";
     this.COMPARE = "COMPARE";
-    this.CONSOLIDATE = "CONSOLIDATE";
+    this.CONSTANT = "CONSTANT";
     this.CURRENCY_CONVERSION = "CURRENCY_CONVERSION";
+    this.DATASET_COLUMN = "DATASET_COLUMN";
     this.DATE_RANGE_SELECTOR_ID = "DATE_RANGE_SELECTOR_ID";
     this.DATE_SELECTOR_ID = "DATE_SELECTOR_ID";
     this.DATE_TIME_PROPERTY = "DATE_TIME_PROPERTY";
+    this.DIVIDE = "DIVIDE";
     this.EQUALS = "EQUALS";
     this.FIELD = "FIELD";
     this.HIERARCHY = "HIERARCHY";
     this.HIERARCHY_TO_TEXT = "HIERARCHY_TO_TEXT";
+    this.IF = "IF";
     this.IN_RANGE = "IN_RANGE";
     this.IS_NULL = "IS_NULL";
     this.LAMBDA = "LAMBDA";
+    this.MEASURE_VALUE = "MEASURE_VALUE";
+    this.MINUS = "MINUS";
+    this.MULTIPLY = "MULTIPLY";
     this.NOT = "NOT";
     this.OR = "OR";
+    this.PLUS = "PLUS";
     this.RECORD_DISPLAY_VALUE = "RECORD_DISPLAY_VALUE";
     this.RECORD_KEY = "RECORD_KEY";
+    this.SIMPLE_CONSOLIDATE = "SIMPLE_CONSOLIDATE";
+    this.TRANSLATE = "TRANSLATE";
     this.TRUNCATE_DATE_TIME = "TRUNCATE_DATE_TIME";
   }
 

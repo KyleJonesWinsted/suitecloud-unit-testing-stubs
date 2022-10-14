@@ -62,20 +62,21 @@ module.exports = (function () {
   // Enum
 
   function Encoding() {
-    this.UTF_8 = "UTF_8";
-    this.WINDOWS_1252 = "WINDOWS_1252";
-    this.ISO_8859_1 = "ISO_8859_1";
+    this.UTF_8 = "UTF-8";
+    this.WINDOWS_1252 = "windows-1252";
+    this.ISO_8859_1 = "ISO-8859-1";
     this.GB18030 = "GB18030";
     this.SHIFT_JIS = "SHIFT_JIS";
-    this.MAC_ROMAN = "MAC_ROMAN";
+    this.MAC_ROMAN = "MacRoman";
     this.GB2312 = "GB2312";
-    this.BIG5 = "BIG5";
+    this.BIG5 = "Big5";
   }
 
   function NameConflictResolution() {
-    this.FAIL = 'FAIL'; 
-    this.OVERWRITE = 'OVERWRITE'; 
-    this.RENAME_TO_UNIQUE = 'RENAME_TO_UNIQUE'; 
+    this.FAIL = "FAIL";
+    this.OVERWRITE = "OVERWRITE";
+    this.OVERWRITE_CONTENT_AND_ATTRIBUTES = "OVERWRITE_CONTENT_AND_ATTRIBUTES";
+    this.RENAME_TO_UNIQUE = "RENAME_TO_UNIQUE";
   }
 
   function Type() {
