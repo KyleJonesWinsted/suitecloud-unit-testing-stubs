@@ -79,6 +79,15 @@ module.exports = (function () {
     this.MD5 = "MD5";
   }
 
+  function Encoding() {
+    this.UTF_8 = "UTF_8";
+    this.BASE_16 = "BASE_16";
+    this.BASE_32 = "BASE_32";
+    this.BASE_64 = "BASE_64";
+    this.BASE_64_URL_SAFE = "BASE_64_URL_SAFE";
+    this.HEX = "HEX";
+  }
+
   function Padding() {
     this.NoPadding = "NoPadding";
     this.PKCS5Padding = "PKCS5Padding";
@@ -87,6 +96,8 @@ module.exports = (function () {
   crypto.prototype.EncryptionAlg = new EncryptionAlg();
 
   crypto.prototype.HashAlg = new HashAlg();
+
+  crypto.prototype.Encoding = new Encoding();
 
   crypto.prototype.Padding = new Padding();
 
