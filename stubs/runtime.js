@@ -137,6 +137,7 @@ module.exports = (function () {
     this.BANKSTATEMENTPARSER = "BANKSTATEMENTPARSER";
     this.PLATFORMEXTENSION = "PLATFORMEXTENSION";
     this.RECORDACTION = "RECORDACTION";
+    this.OCRPLUGIN = "OCRPLUGIN";
     this.NONE = "NONE";
   }
 

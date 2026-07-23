@@ -89,10 +89,8 @@ module.exports = (function () {
   }
 
   function HashAlg() {
-    this.SHA1 = "SHA1";
     this.SHA256 = "SHA256";
     this.SHA512 = "SHA512";
-    this.MD5 = "MD5";
   }
 
   function Encoding() {

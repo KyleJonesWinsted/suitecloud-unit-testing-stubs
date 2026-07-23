@@ -26,11 +26,7 @@ module.exports = (function() {
 
   https.prototype.createSecretKey = function(options) {};
 
-  https.prototype.createSecretKey.promise = function(options) {};
-
   https.prototype.createSecureString = function(options) {};
-
-  https.prototype.createSecureString.promise = function(options) {};
 
   https.prototype["delete"] = function(options) {};
 

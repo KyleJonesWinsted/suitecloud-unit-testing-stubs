@@ -51,7 +51,6 @@ module.exports = (function () {
   // Enum
 
   function HashAlg() {
-    this.SHA1 = "SHA1";
     this.SHA256 = "SHA256";
     this.SHA384 = "SHA384";
     this.SHA512 = "SHA512";
