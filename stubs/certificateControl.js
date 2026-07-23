@@ -22,9 +22,37 @@ module.exports = (function () {
 
   certificateControl.prototype.loadCertificate = function (options) { };
 
+  certificateControl.prototype.lock = function (options) { };
+
+  certificateControl.prototype.unlock = function (options) { };
+
   // Certificate Object Methods
 
   Certificate.prototype.save = function () { };
+
+  // Certificate Object Properties
+
+  Certificate.prototype.description = undefined;
+
+  Certificate.prototype.file = undefined;
+
+  Certificate.prototype.monthReminder = undefined;
+
+  Certificate.prototype.name = undefined;
+
+  Certificate.prototype.notifications = undefined;
+
+  Certificate.prototype.password = undefined;
+
+  Certificate.prototype.restrictions = undefined;
+
+  Certificate.prototype.scriptId = undefined;
+
+  Certificate.prototype.subsidiaries = undefined;
+
+  Certificate.prototype.threeMonthsReminder = undefined;
+
+  Certificate.prototype.weekReminder = undefined;
 
   // Enum
 

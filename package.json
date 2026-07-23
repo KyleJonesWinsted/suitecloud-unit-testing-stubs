@@ -1,8 +1,11 @@
 {
   "name": "suitecloud-unit-testing-stubs",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Custom stubs for all Suitescript 2.x modules. Used in conjunction with the @oracle/suitecloud-unit-testing package.",
   "main": "SuiteCloudJestStubs.js",
+  "scripts": {
+    "validate-stubs": "node scripts/validate-stubs.js"
+  },
   "author": "Kyle Jones <kylejoneswinsted@gmail.com>",
   "license": "ISC",
   "keywords": [

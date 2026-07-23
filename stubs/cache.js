@@ -22,6 +22,12 @@ module.exports = (function () {
 
   Cache.prototype.remove = function(options) {};
 
+  // Cache Object Properties
+
+  Cache.prototype.name = undefined;
+
+  Cache.prototype.scope = undefined;
+
   // Enum
 
   function Scope() {

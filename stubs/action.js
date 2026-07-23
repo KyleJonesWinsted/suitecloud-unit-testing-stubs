@@ -38,6 +38,18 @@ module.exports = (function () {
 
   Action.prototype.executeBulk = function(options) {};
 
+  // Action Object Properties
+
+  Action.prototype.description = undefined;
+
+  Action.prototype.id = undefined;
+
+  Action.prototype.label = undefined;
+
+  Action.prototype.parameters = undefined;
+
+  Action.prototype.recordType = undefined;
+
   return new action();
 
 })();

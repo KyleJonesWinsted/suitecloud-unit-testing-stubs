@@ -53,6 +53,32 @@ module.exports = (function () {
 
   File.prototype.getSegments = function(options) {};
 
+  // File Object Properties
+
+  File.prototype.description = undefined;
+
+  File.prototype.encoding = undefined;
+
+  File.prototype.fileType = undefined;
+
+  File.prototype.folder = undefined;
+
+  File.prototype.id = undefined;
+
+  File.prototype.isInactive = undefined;
+
+  File.prototype.isOnline = undefined;
+
+  File.prototype.isText = undefined;
+
+  File.prototype.name = undefined;
+
+  File.prototype.path = undefined;
+
+  File.prototype.size = undefined;
+
+  File.prototype.url = undefined;
+
   // Reader Object Methods
 
   Reader.prototype.readUntil = function(options) {};

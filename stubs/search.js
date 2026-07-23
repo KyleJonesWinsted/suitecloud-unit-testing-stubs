@@ -14,6 +14,8 @@ module.exports = (function () {
 
   var PagedData = function () { };
 
+  var PageRange = function () { };
+
   var Result = function () { };
 
   var ResultSet = function () { };
@@ -29,6 +31,8 @@ module.exports = (function () {
   search.prototype.Page = Page;
 
   search.prototype.PagedData = PagedData;
+
+  search.prototype.PageRange = PageRange;
 
   search.prototype.Result = Result;
 
@@ -74,6 +78,32 @@ module.exports = (function () {
 
   Column.prototype.setWhenOrderedBy = function (options) { };
 
+  // Column Object Properties
+
+  Column.prototype.formula = undefined;
+
+  Column.prototype["function"] = undefined;
+
+  Column.prototype.join = undefined;
+
+  Column.prototype.label = undefined;
+
+  Column.prototype.name = undefined;
+
+  Column.prototype.summary = undefined;
+
+  // Filter Object Properties
+
+  Filter.prototype.formula = undefined;
+
+  Filter.prototype.join = undefined;
+
+  Filter.prototype.name = undefined;
+
+  Filter.prototype.operator = undefined;
+
+  Filter.prototype.summary = undefined;
+
   // Page Object Methods
 
   Page.prototype.next = function () { };
@@ -84,17 +114,53 @@ module.exports = (function () {
 
   Page.prototype.prev.promise = function () { };
 
+  // Page Object Properties
+
+  Page.prototype.data = undefined;
+
+  Page.prototype.isFirst = undefined;
+
+  Page.prototype.isLast = undefined;
+
+  Page.prototype.pagedData = undefined;
+
+  Page.prototype.pageRange = undefined;
+
   // PagedData Object Members
 
   PagedData.prototype.fetch = function () { };
 
   PagedData.prototype.fetch.promise = function () { };
 
+  // PagedData Object Properties
+
+  PagedData.prototype.count = undefined;
+
+  PagedData.prototype.pageRanges = undefined;
+
+  PagedData.prototype.pageSize = undefined;
+
+  PagedData.prototype.searchDefinition = undefined;
+
+  // PageRange Object Properties
+
+  PageRange.prototype.compoundLabel = undefined;
+
+  PageRange.prototype.index = undefined;
+
   // Result Object Methods
 
   Result.prototype.getText = function (options) { };
 
   Result.prototype.getValue = function (options) { };
+
+  // Result Object Properties
+
+  Result.prototype.columns = undefined;
+
+  Result.prototype.id = undefined;
+
+  Result.prototype.recordType = undefined;
 
   // ResultSet Object Methods
 
@@ -105,6 +171,10 @@ module.exports = (function () {
   ResultSet.prototype.getRange = function (options) { };
 
   ResultSet.prototype.getRange.promise = function (options) { };
+
+  // ResultSet Object Properties
+
+  ResultSet.prototype.columns = undefined;
 
   // Search Object Methods
 
@@ -117,6 +187,34 @@ module.exports = (function () {
   Search.prototype.save = function () { };
 
   Search.prototype.save.promise = function () { };
+
+  // Search Object Properties
+
+  Search.prototype.columns = undefined;
+
+  Search.prototype.filterExpression = undefined;
+
+  Search.prototype.filters = undefined;
+
+  Search.prototype.id = undefined;
+
+  Search.prototype.isPublic = undefined;
+
+  Search.prototype.packageId = undefined;
+
+  Search.prototype.searchId = undefined;
+
+  Search.prototype.searchType = undefined;
+
+  Search.prototype.settings = undefined;
+
+  Search.prototype.title = undefined;
+
+  // Setting Object Properties
+
+  Setting.prototype.name = undefined;
+
+  Setting.prototype.value = undefined;
 
   // Enum
 

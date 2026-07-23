@@ -20,9 +20,27 @@ module.exports = (function () {
 
   keyControl.prototype.loadKey = function(options) {};
 
+  keyControl.prototype.lock = function(options) {};
+
+  keyControl.prototype.unlock = function(options) {};
+
   // Key Object Methods
 
   Key.prototype.save = function() {};
+
+  // Key Object Properties
+
+  Key.prototype.description = undefined;
+
+  Key.prototype.file = undefined;
+
+  Key.prototype.name = undefined;
+
+  Key.prototype.password = undefined;
+
+  Key.prototype.restrictions = undefined;
+
+  Key.prototype.scriptId = undefined;
 
   // Enum
 

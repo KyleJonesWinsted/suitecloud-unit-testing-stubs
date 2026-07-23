@@ -40,6 +40,8 @@ module.exports = (function () {
 
   crypto.prototype.createHmac = function(options) {};
 
+  crypto.prototype.checkPasswordField = function(options) {};
+
   crypto.prototype.createSecretKey = function(options) {};
 
   // Cipher Object Methods
@@ -47,6 +49,12 @@ module.exports = (function () {
   Cipher.prototype.update = function(options) {};
 
   Cipher.prototype.final = function(options) {};
+
+  // CipherPayload Object Properties
+
+  CipherPayload.prototype.ciphertext = undefined;
+
+  CipherPayload.prototype.iv = undefined;
 
   // Decipher Object Methods
 
@@ -66,6 +74,14 @@ module.exports = (function () {
 
   Hmac.prototype.update = function(options) {};
 
+  // SecretKey Object Properties
+
+  SecretKey.prototype.encoding = undefined;
+
+  SecretKey.prototype.guid = undefined;
+
+  SecretKey.prototype.secret = undefined;
+
   // Enum
 
   function EncryptionAlg() {
@@ -73,10 +89,8 @@ module.exports = (function () {
   }
 
   function HashAlg() {
-    this.SHA1 = "SHA1";
     this.SHA256 = "SHA256";
     this.SHA512 = "SHA512";
-    this.MD5 = "MD5";
   }
 
   function Encoding() {

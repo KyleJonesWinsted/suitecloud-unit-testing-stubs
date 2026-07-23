@@ -8,7 +8,7 @@ module.exports = (function () {
 
   plugin.prototype.findImplementations = function(options) {};
 
-  plugin.prototype.loadImplementations = function(options) {};
+  plugin.prototype.loadImplementation = function(options) {};
 
   return new plugin();
 })();

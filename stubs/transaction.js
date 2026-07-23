@@ -28,7 +28,6 @@ module.exports = (function () {
     this.CUSTOMER_PAYMENT = "customerpayment";
     this.CUSTOMER_PAYMENT_AUTHORIZATION = "customerpaymentauthorization";
     this.CUSTOMER_REFUND = "customerrefund";
-    this.CUSTOM_SALE = "customsale";
     this.CUSTOM_TRANSACTION = "customtransaction";
     this.DEPOSIT = "deposit";
     this.DEPOSIT_APPLICATION = "depositapplication";

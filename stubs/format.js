@@ -57,7 +57,7 @@ module.exports = (function () {
     this.URL = "url";
   }
 
-  function TimeZone() {
+  function Timezone() {
     this.ETC_GMT_PLUS_12 = 'Etc/GMT+12';
     this.PACIFIC_SAMOA = 'Pacific/Samoa';
     this.PACIFIC_HONOLULU = 'Pacific/Honolulu';
@@ -66,6 +66,7 @@ module.exports = (function () {
     this.AMERICA_TIJUANA = 'America/Tijuana';
     this.AMERICA_DENVER = 'America/Denver';
     this.AMERICA_PHOENIX = 'America/Phoenix';
+    this.AMERICA_HERMOSILLO = 'America/Hermosillo';
     this.AMERICA_CHIHUAHUA = 'America/Chihuahua';
     this.AMERICA_CHICAGO = 'America/Chicago';
     this.AMERICA_REGINA = 'America/Regina';
@@ -141,7 +142,7 @@ module.exports = (function () {
     this.AUSTRALIA_HOBART = 'Australia/Hobart';
     this.PACIFIC_GUAM = 'Pacific/Guam';
     this.ASIA_VLADIVOSTOK = 'Asia/Vladivostok';
-    this.ASIA_MAGADAN = 'Asia/Magadan';
+    this.PACIFIC_GUADALCANA = 'Pacific/Guadalcanal';
     this.PACIFIC_KWAJALEIN = 'Pacific/Kwajalein';
     this.PACIFIC_AUCKLAND = 'Pacific/Auckland';
     this.PACIFIC_TONGATAPU = 'Pacific/Tongatapu';
@@ -149,7 +150,7 @@ module.exports = (function () {
 
   format.prototype.Type = new Type();
 
-  format.prototype.TimeZone = new TimeZone();
+  format.prototype.Timezone = new Timezone();
 
   return new format();
 })();

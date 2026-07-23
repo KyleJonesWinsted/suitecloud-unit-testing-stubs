@@ -76,6 +76,40 @@ module.exports = (function () {
 
   Node.prototype.replaceChild = function(options) {};
 
+  // Node Object Properties
+
+  Node.prototype.attributes = undefined;
+
+  Node.prototype.baseURI = undefined;
+
+  Node.prototype.childNodes = undefined;
+
+  Node.prototype.firstChild = undefined;
+
+  Node.prototype.lastChild = undefined;
+
+  Node.prototype.localName = undefined;
+
+  Node.prototype.namespaceURI = undefined;
+
+  Node.prototype.nextSibling = undefined;
+
+  Node.prototype.nodeName = undefined;
+
+  Node.prototype.nodeType = undefined;
+
+  Node.prototype.nodeValue = undefined;
+
+  Node.prototype.ownerDocument = undefined;
+
+  Node.prototype.parentNode = undefined;
+
+  Node.prototype.prefix = undefined;
+
+  Node.prototype.previousSibling = undefined;
+
+  Node.prototype.textContent = undefined;
+
   // Document Object Methods
 
   Document.prototype.adoptNode = function(options) {};
@@ -105,6 +139,22 @@ module.exports = (function () {
   Document.prototype.getElementsByTagNameNS = function(options) {};
 
   Document.prototype.importNode = function(options) {};
+
+  // Document Object Properties
+
+  Document.prototype.doctype = undefined;
+
+  Document.prototype.documentElement = undefined;
+
+  Document.prototype.documentURI = undefined;
+
+  Document.prototype.inputEncoding = undefined;
+
+  Document.prototype.xmlEncoding = undefined;
+
+  Document.prototype.xmlStandalone = undefined;
+
+  Document.prototype.xmlVersion = undefined;
 
   // Element Object Methods
 
@@ -137,6 +187,20 @@ module.exports = (function () {
   Element.prototype.setAttributeNodeNS = function(options) {};
 
   Element.prototype.setAttributeNS = function(options) {};
+
+  // Element Object Properties
+
+  Element.prototype.tagName = undefined;
+
+  // Attr Object Properties
+
+  Attr.prototype.name = undefined;
+
+  Attr.prototype.ownerElement = undefined;
+
+  Attr.prototype.specified = undefined;
+
+  Attr.prototype.value = undefined;
 
   // Enum
 

@@ -28,7 +28,5 @@ module.exports = (function () {
 
   util.prototype.isString = function(obj) {};
 
-  util.prototype.nanoTime = function() {};
-
   return new util();
 })();

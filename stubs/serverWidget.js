@@ -100,17 +100,57 @@ module.exports = (function () {
 
   Assistant.prototype.updateDefaultValues = function (values) { };
 
+  // Assistant Object Properties
+
+  Assistant.prototype.clientScriptFileId = undefined;
+
+  Assistant.prototype.clientScriptModulePath = undefined;
+
+  Assistant.prototype.currentStep = undefined;
+
+  Assistant.prototype.errorHtml = undefined;
+
+  Assistant.prototype.finishedHtml = undefined;
+
+  Assistant.prototype.hideAddToShortcutsLink = undefined;
+
+  Assistant.prototype.hideStepNumber = undefined;
+
+  Assistant.prototype.isNotOrdered = undefined;
+
+  Assistant.prototype.title = undefined;
+
   // AssistantStep Object Methods
 
   AssistantStep.prototype.getFieldIds = function () { };
 
   AssistantStep.prototype.getLineCount = function (options) { };
 
+  AssistantStep.prototype.getSublistFieldIds = function (options) { };
+
   AssistantStep.prototype.getSublistValue = function (options) { };
 
   AssistantStep.prototype.getSubmittedSublistIds = function () { };
 
   AssistantStep.prototype.getValue = function (options) { };
+
+  // AssistantStep Object Properties
+
+  AssistantStep.prototype.helpText = undefined;
+
+  AssistantStep.prototype.id = undefined;
+
+  AssistantStep.prototype.label = undefined;
+
+  AssistantStep.prototype.stepNumber = undefined;
+
+  // Button Object Properties
+
+  Button.prototype.isDisabled = undefined;
+
+  Button.prototype.isHidden = undefined;
+
+  Button.prototype.label = undefined;
 
   // Field Object Methods
 
@@ -127,6 +167,44 @@ module.exports = (function () {
   Field.prototype.updateDisplayType = function (options) { };
 
   Field.prototype.updateLayoutType = function (options) { };
+
+  // Field Object Properties
+
+  Field.prototype.alias = undefined;
+
+  Field.prototype.defaultValue = undefined;
+
+  Field.prototype.helpText = undefined;
+
+  Field.prototype.id = undefined;
+
+  Field.prototype.isMandatory = undefined;
+
+  Field.prototype.label = undefined;
+
+  Field.prototype.linkText = undefined;
+
+  Field.prototype.maxLength = undefined;
+
+  Field.prototype.padding = undefined;
+
+  Field.prototype.richTextHeight = undefined;
+
+  Field.prototype.richTextWidth = undefined;
+
+  Field.prototype.type = undefined;
+
+  // FieldGroup Object Properties
+
+  FieldGroup.prototype.isBorderHidden = undefined;
+
+  FieldGroup.prototype.isCollapsed = undefined;
+
+  FieldGroup.prototype.isCollapsible = undefined;
+
+  FieldGroup.prototype.isSingleColumn = undefined;
+
+  FieldGroup.prototype.label = undefined;
 
   // Form Object Methods
 
@@ -168,6 +246,8 @@ module.exports = (function () {
 
   Form.prototype.insertField = function (options) { };
 
+  Form.prototype.insertSublist = function (options) { };
+
   Form.prototype.insertSubtab = function (options) { };
 
   Form.prototype.insertTab = function (options) { };
@@ -175,6 +255,14 @@ module.exports = (function () {
   Form.prototype.removeButton = function (options) { };
 
   Form.prototype.updateDefaultValues = function (options) { };
+
+  // Form Object Properties
+
+  Form.prototype.clientScriptFileId = undefined;
+
+  Form.prototype.clientScriptModulePath = undefined;
+
+  Form.prototype.title = undefined;
 
   // List Object Methods
 
@@ -190,11 +278,25 @@ module.exports = (function () {
 
   List.prototype.addRows = function (options) { };
 
+  // List Object Properties
+
+  List.prototype.clientScriptFileId = undefined;
+
+  List.prototype.clientScriptModulePath = undefined;
+
+  List.prototype.style = undefined;
+
+  List.prototype.title = undefined;
+
   // ListColumn Object Methods
 
   ListColumn.prototype.addParamToURL = function (options) { };
 
   ListColumn.prototype.setURL = function (options) { };
+
+  // ListColumn Object Properties
+
+  ListColumn.prototype.label = undefined;
 
   // Sublist Object Methods
 
@@ -202,9 +304,11 @@ module.exports = (function () {
 
   Sublist.prototype.addField = function (options) { };
 
+  Sublist.prototype.insertField = function (options) { };
+
   Sublist.prototype.addMarkAllButtons = function () { };
 
-  Sublist.prototype.addRefreshButtons = function () { };
+  Sublist.prototype.addRefreshButton = function () { };
 
   Sublist.prototype.getField = function (options) { };
 
@@ -215,6 +319,22 @@ module.exports = (function () {
   Sublist.prototype.updateTotallingFieldId = function (options) { };
 
   Sublist.prototype.updateUniqueFieldId = function (options) { };
+
+  // Sublist Object Properties
+
+  Sublist.prototype.displayType = undefined;
+
+  Sublist.prototype.helpText = undefined;
+
+  Sublist.prototype.label = undefined;
+
+  Sublist.prototype.lineCount = undefined;
+
+  // Tab Object Properties
+
+  Tab.prototype.helpText = undefined;
+
+  Tab.prototype.label = undefined;
 
   // Enum
 

@@ -28,6 +28,20 @@ module.exports = (function () {
 
   currentRecord.prototype.get.promise = function() {};
 
+  // Column Object Properties
+
+  Column.prototype.id = undefined;
+
+  Column.prototype.isDisabled = undefined;
+
+  Column.prototype.isMandatory = undefined;
+
+  Column.prototype.label = undefined;
+
+  Column.prototype.sublistId = undefined;
+
+  Column.prototype.type = undefined;
+
   // CurrentRecord Object Methods
 
   CurrentRecord.prototype.cancelLine = function(options) {};
@@ -108,17 +122,57 @@ module.exports = (function () {
 
   CurrentRecord.prototype.setValue = function(options) {};
 
+  // CurrentRecord Object Properties
+
+  CurrentRecord.prototype.id = undefined;
+
+  CurrentRecord.prototype.isDynamic = undefined;
+
+  CurrentRecord.prototype.type = undefined;
+
   // Field Object Methods
 
   Field.prototype.getSelectOptions = function(options) {};
 
   Field.prototype.insertSelectOption = function(options) {};
 
-  Field.prototype.removeSelectOptions = function(options) {};
+  Field.prototype.removeSelectOption = function(options) {};
+
+  // Field Object Properties
+
+  Field.prototype.id = undefined;
+
+  Field.prototype.isDisabled = undefined;
+
+  Field.prototype.isDisplay = undefined;
+
+  Field.prototype.isMandatory = undefined;
+
+  Field.prototype.isPopup = undefined;
+
+  Field.prototype.isReadOnly = undefined;
+
+  Field.prototype.isVisible = undefined;
+
+  Field.prototype.label = undefined;
+
+  Field.prototype.sublistId = undefined;
+
+  Field.prototype.type = undefined;
 
   // Sublist Object Members
 
   Sublist.prototype.getColumn = function(options) {};
+
+  // Sublist Object Properties
+
+  Sublist.prototype.id = undefined;
+
+  Sublist.prototype.isChanged = undefined;
+
+  Sublist.prototype.isDisplay = undefined;
+
+  Sublist.prototype.type = undefined;
   
   return new currentRecord();
 })();
