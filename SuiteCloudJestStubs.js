@@ -43,7 +43,6 @@ const customStubMap = {
   restlet: 'scriptTypes/restlet',
   search: 'search',
   sftp: 'sftp',
-  sso: 'sso',
   suiteAppInfo: 'suiteAppInfo',
   task: 'task',
   recognition: 'task/accounting/recognition',
