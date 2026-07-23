@@ -60,9 +60,41 @@ module.exports = (function () {
 
   record.prototype.transform.promise = function (options) { };
 
+  // Column Object Properties
+
+  Column.prototype.id = undefined;
+
+  Column.prototype.isDisabled = undefined;
+
+  Column.prototype.isDisplay = undefined;
+
+  Column.prototype.isMandatory = undefined;
+
+  Column.prototype.isSortable = undefined;
+
+  Column.prototype.label = undefined;
+
+  Column.prototype.sublistId = undefined;
+
+  Column.prototype.type = undefined;
+
   // Field Object Methods
 
   Field.prototype.getSelectOptions = function (options) { };
+
+  // Field Object Properties
+
+  Field.prototype.id = undefined;
+
+  Field.prototype.isDisplay = undefined;
+
+  Field.prototype.isMandatory = undefined;
+
+  Field.prototype.label = undefined;
+
+  Field.prototype.sublistId = undefined;
+
+  Field.prototype.type = undefined;
 
   // Macro Object Methods
 
@@ -71,6 +103,16 @@ module.exports = (function () {
   Macro.prototype.execute.promise = function (options) { };
 
   Macro.promise = function (options) { };
+
+  // Macro Object Properties
+
+  Macro.prototype.attributes = undefined;
+
+  Macro.prototype.description = undefined;
+
+  Macro.prototype.id = undefined;
+
+  Macro.prototype.label = undefined;
 
   // Record Object Methods
 
@@ -178,9 +220,27 @@ module.exports = (function () {
 
   Record.prototype.setValue = function (options) { };
 
+  // Record Object Properties
+
+  Record.prototype.id = undefined;
+
+  Record.prototype.isDynamic = undefined;
+
+  Record.prototype.type = undefined;
+
   // Sublist Object Methods
 
   Sublist.prototype.getColumn = function (options) { };
+
+  // Sublist Object Properties
+
+  Sublist.prototype.id = undefined;
+
+  Sublist.prototype.isChanged = undefined;
+
+  Sublist.prototype.isDisplay = undefined;
+
+  Sublist.prototype.type = undefined;
 
   // Enum
 

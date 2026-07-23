@@ -28,9 +28,53 @@ module.exports = (function () {
 
   MergeArrangementsTask.prototype.submit = function() {};
 
+  // MergeArrangementsTask Object Properties
+
+  MergeArrangementsTask.prototype.arrangements = undefined;
+
+  MergeArrangementsTask.prototype.contractAcquisitionDeferredExpenseAccount = undefined;
+
+  MergeArrangementsTask.prototype.contractAcquisitionExpenseAccount = undefined;
+
+  MergeArrangementsTask.prototype.contractCostAccrualDate = undefined;
+
+  MergeArrangementsTask.prototype.mergeResidualRevenueAmounts = undefined;
+
+  MergeArrangementsTask.prototype.recalculateResidualFairValue = undefined;
+
+  MergeArrangementsTask.prototype.revenueArrangementDate = undefined;
+
+  // MergeArrangementsTaskStatus Object Properties
+
+  MergeArrangementsTaskStatus.prototype.errorMessage = undefined;
+
+  MergeArrangementsTaskStatus.prototype.inputArrangements = undefined;
+
+  MergeArrangementsTaskStatus.prototype.inputElements = undefined;
+
+  MergeArrangementsTaskStatus.prototype.resultingArrangement = undefined;
+
+  MergeArrangementsTaskStatus.prototype.status = undefined;
+
+  MergeArrangementsTaskStatus.prototype.submissionId = undefined;
+
+  MergeArrangementsTaskStatus.prototype.taskId = undefined;
+
   // MergeElementsTask Objects Methods
 
   MergeElementsTask.prototype.submit = function() {};
+
+  // MergeElementsTask Object Properties
+
+  MergeElementsTask.prototype.contractAcquisitionDeferredExpenseAccount = undefined;
+
+  MergeElementsTask.prototype.contractAcquisitionExpenseAccount = undefined;
+
+  MergeElementsTask.prototype.contractCostAccrualDate = undefined;
+
+  MergeElementsTask.prototype.elements = undefined;
+
+  MergeElementsTask.prototype.revenueArrangementDate = undefined;
 
   // Enum
 

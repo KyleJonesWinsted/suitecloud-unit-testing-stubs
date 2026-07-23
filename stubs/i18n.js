@@ -38,9 +38,31 @@ module.exports = (function () {
 
   CurrencyFormatter.prototype.format = function(options) {};
 
+  // Currency Formatter Object Properties
+
+  CurrencyFormatter.prototype.currency = undefined;
+
+  CurrencyFormatter.prototype.locale = undefined;
+
+  CurrencyFormatter.prototype.numberFormatter = undefined;
+
+  CurrencyFormatter.prototype.symbol = undefined;
+
   // Number Formatter Object Methods
 
   NumberFormatter.prototype.format = function(options) {};
+
+  // Number Formatter Object Properties
+
+  NumberFormatter.prototype.decimalSeparator = undefined;
+
+  NumberFormatter.prototype.groupSeparator = undefined;
+
+  NumberFormatter.prototype.locale = undefined;
+
+  NumberFormatter.prototype.negativeNumberFormat = undefined;
+
+  NumberFormatter.prototype.precision = undefined;
 
   // Phone Number Formatter Object Methods
 

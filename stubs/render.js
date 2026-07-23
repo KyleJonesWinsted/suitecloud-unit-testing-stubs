@@ -32,6 +32,12 @@ module.exports = (function () {
 
   render.prototype.xmlToPdf = function(options) {};
 
+  // EmailMergeResult Object Properties
+
+  EmailMergeResult.prototype.body = undefined;
+
+  EmailMergeResult.prototype.subject = undefined;
+
   // TemplateRenderer Object Methods
 
   TemplateRenderer.prototype.addCustomDataSource = function(options) {};
@@ -53,6 +59,10 @@ module.exports = (function () {
   TemplateRenderer.prototype.setTemplateByScriptId = function(options) {};
 
   TemplateRenderer.prototype.renderToResponse = function(options) {};
+
+  // TemplateRenderer Object Properties
+
+  TemplateRenderer.prototype.templateContent = undefined;
 
   // Enum
 

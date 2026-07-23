@@ -50,6 +50,12 @@ module.exports = (function () {
 
   Cipher.prototype.final = function(options) {};
 
+  // CipherPayload Object Properties
+
+  CipherPayload.prototype.ciphertext = undefined;
+
+  CipherPayload.prototype.iv = undefined;
+
   // Decipher Object Methods
 
   Decipher.prototype.final = function(options) {};
@@ -67,6 +73,14 @@ module.exports = (function () {
   Hmac.prototype.digest = function(options) {};
 
   Hmac.prototype.update = function(options) {};
+
+  // SecretKey Object Properties
+
+  SecretKey.prototype.encoding = undefined;
+
+  SecretKey.prototype.guid = undefined;
+
+  SecretKey.prototype.secret = undefined;
 
   // Enum
 

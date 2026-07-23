@@ -28,11 +28,41 @@ module.exports = (function () {
 
   runtime.prototype.isFeatureInEffect = function(options) {};
 
+  // Property
+
+  runtime.prototype.accountId = undefined;
+
+  runtime.prototype.country = undefined;
+
+  runtime.prototype.envType = undefined;
+
+  runtime.prototype.executionContext = undefined;
+
+  runtime.prototype.processorCount = undefined;
+
+  runtime.prototype.queueCount = undefined;
+
+  runtime.prototype.version = undefined;
+
   // Script Object Methods
 
   Script.prototype.getParameter = function(options) {};
 
   Script.prototype.getRemainingUsage = function() {};
+
+  // Script Object Properties
+
+  Script.prototype.apiVersion = undefined;
+
+  Script.prototype.bundleIds = undefined;
+
+  Script.prototype.deploymentId = undefined;
+
+  Script.prototype.id = undefined;
+
+  Script.prototype.logLevel = undefined;
+
+  Script.prototype.percentComplete = undefined;
 
   // Session Object Methods
 
@@ -45,6 +75,28 @@ module.exports = (function () {
   User.prototype.getPermission = function(options) {};
 
   User.prototype.getPreference = function(options) {};
+
+  // User Object Properties
+
+  User.prototype.contact = undefined;
+
+  User.prototype.department = undefined;
+
+  User.prototype.email = undefined;
+
+  User.prototype.id = undefined;
+
+  User.prototype.location = undefined;
+
+  User.prototype.name = undefined;
+
+  User.prototype.role = undefined;
+
+  User.prototype.roleCenter = undefined;
+
+  User.prototype.roleId = undefined;
+
+  User.prototype.subsidiary = undefined;
 
   // Enum
 

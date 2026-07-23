@@ -46,6 +46,34 @@ module.exports = (function () {
 
   dataset.prototype.load.promise = function(options) {};
 
+  // Column Object Properties
+
+  Column.prototype.alias = undefined;
+
+  Column.prototype.fieldId = undefined;
+
+  Column.prototype.formula = undefined;
+
+  Column.prototype.id = undefined;
+
+  Column.prototype.join = undefined;
+
+  Column.prototype.label = undefined;
+
+  Column.prototype.type = undefined;
+
+  // Condition Object Properties
+
+  Condition.prototype.caseSensitive = undefined;
+
+  Condition.prototype.children = undefined;
+
+  Condition.prototype.column = undefined;
+
+  Condition.prototype.operator = undefined;
+
+  Condition.prototype.values = undefined;
+
   // Dataset Object Methods
 
   Dataset.prototype.getExpressionFromColumn = function(options) {};
@@ -57,6 +85,30 @@ module.exports = (function () {
   Dataset.prototype.runPaged = function() {};
 
   Dataset.prototype.save = function() {};
+
+  // Dataset Object Properties
+
+  Dataset.prototype.columns = undefined;
+
+  Dataset.prototype.condition = undefined;
+
+  Dataset.prototype.description = undefined;
+
+  Dataset.prototype.id = undefined;
+
+  Dataset.prototype.name = undefined;
+
+  Dataset.prototype.type = undefined;
+
+  // Join Object Properties
+
+  Join.prototype.fieldId = undefined;
+
+  Join.prototype.join = undefined;
+
+  Join.prototype.source = undefined;
+
+  Join.prototype.target = undefined;
 
   return new dataset();
 

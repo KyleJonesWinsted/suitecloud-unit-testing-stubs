@@ -82,6 +82,26 @@ module.exports = (function () {
 
   query.prototype.runSuiteQLPaged.promise = function(options) {};
 
+  // Column Object Properties
+
+  Column.prototype.aggregate = undefined;
+
+  Column.prototype.alias = undefined;
+
+  Column.prototype.component = undefined;
+
+  Column.prototype.context = undefined;
+
+  Column.prototype.fieldId = undefined;
+
+  Column.prototype.formula = undefined;
+
+  Column.prototype.groupBy = undefined;
+
+  Column.prototype.label = undefined;
+
+  Column.prototype.type = undefined;
+
   // Component Object Methods
 
   Component.prototype.autoJoin = function(options) {};
@@ -98,6 +118,48 @@ module.exports = (function () {
 
   Component.prototype.joinTo = function(options) {};
 
+  // Component Object Properties
+
+  Component.prototype.child = undefined;
+
+  Component.prototype.parent = undefined;
+
+  Component.prototype.source = undefined;
+
+  Component.prototype.target = undefined;
+
+  Component.prototype.type = undefined;
+
+  // Condition Object Properties
+
+  Condition.prototype.aggregate = undefined;
+
+  Condition.prototype.children = undefined;
+
+  Condition.prototype.component = undefined;
+
+  Condition.prototype.fieldId = undefined;
+
+  Condition.prototype.formula = undefined;
+
+  Condition.prototype.operator = undefined;
+
+  Condition.prototype.type = undefined;
+
+  Condition.prototype.values = undefined;
+
+  // Page Object Properties
+
+  Page.prototype.data = undefined;
+
+  Page.prototype.isFirst = undefined;
+
+  Page.prototype.isLast = undefined;
+
+  Page.prototype.pagedData = undefined;
+
+  Page.prototype.pageRange = undefined;
+
   // PagedData Object Methods
 
   PagedData.prototype.fetch = function(options) {};
@@ -105,6 +167,28 @@ module.exports = (function () {
   PagedData.prototype.fetch.promise = function(options) {};
 
   PagedData.prototype.iterator = function() {};
+
+  // PagedData Object Properties
+
+  PagedData.prototype.count = undefined;
+
+  PagedData.prototype.pageRanges = undefined;
+
+  PagedData.prototype.pageSize = undefined;
+
+  // PageRange Object Properties
+
+  PageRange.prototype.index = undefined;
+
+  PageRange.prototype.size = undefined;
+
+  // Period Object Properties
+
+  Period.prototype.adjustment = undefined;
+
+  Period.prototype.code = undefined;
+
+  Period.prototype.type = undefined;
 
   // Query Object Methods
 
@@ -138,11 +222,47 @@ module.exports = (function () {
 
   Query.prototype.toSuiteQL = function() {};
 
+  // Query Object Properties
+
+  Query.prototype.child = undefined;
+
+  Query.prototype.columns = undefined;
+
+  Query.prototype.condition = undefined;
+
+  Query.prototype.id = undefined;
+
+  Query.prototype.name = undefined;
+
+  Query.prototype.root = undefined;
+
+  Query.prototype.sort = undefined;
+
+  Query.prototype.type = undefined;
+
+  // RelativeDate Object Properties
+
+  RelativeDate.prototype.dateId = undefined;
+
+  RelativeDate.prototype.end = undefined;
+
+  RelativeDate.prototype.interval = undefined;
+
+  RelativeDate.prototype.isRange = undefined;
+
+  RelativeDate.prototype.start = undefined;
+
+  RelativeDate.prototype.value = undefined;
+
   // Result Object Methods
 
   Result.prototype.asMap = function() {};
 
   Result.prototype.getValue = function(options) {};
+
+  // Result Object Properties
+
+  Result.prototype.values = undefined;
 
   // ResultSet Object Methods
 
@@ -150,11 +270,41 @@ module.exports = (function () {
 
   ResultSet.prototype.iterator = function() {};
 
+  // ResultSet Object Properties
+
+  ResultSet.prototype.columns = undefined;
+
+  ResultSet.prototype.results = undefined;
+
+  ResultSet.prototype.types = undefined;
+
+  // Sort Object Properties
+
+  Sort.prototype.ascending = undefined;
+
+  Sort.prototype.caseSensitive = undefined;
+
+  Sort.prototype.column = undefined;
+
+  Sort.prototype.locale = undefined;
+
+  Sort.prototype.nullsLast = undefined;
+
   // SuiteQL Object Methods
 
   SuiteQL.prototype.run = function() {};
 
   SuiteQL.prototype.runPaged = function() {};
+
+  // SuiteQL Object Properties
+
+  SuiteQL.prototype.columns = undefined;
+
+  SuiteQL.prototype.params = undefined;
+
+  SuiteQL.prototype.query = undefined;
+
+  SuiteQL.prototype.type = undefined;
 
   // Enum
 

@@ -96,19 +96,93 @@ module.exports = (function () {
 
   CsvImportTask.prototype.submit = function() {};
 
+  // CsvImportTask Object Properties
+
+  CsvImportTask.prototype.id = undefined;
+
+  CsvImportTask.prototype.importFile = undefined;
+
+  CsvImportTask.prototype.linkedFiles = undefined;
+
+  CsvImportTask.prototype.mappingId = undefined;
+
+  CsvImportTask.prototype.name = undefined;
+
+  CsvImportTask.prototype.queueId = undefined;
+
+  // CsvImportTaskStatus Object Properties
+
+  CsvImportTaskStatus.prototype.status = undefined;
+
+  CsvImportTaskStatus.prototype.taskId = undefined;
+
   // DocumentCaptureTask Object Methods
 
   DocumentCaptureTask.prototype.addInboundDependency = function(options) {};
 
   DocumentCaptureTask.prototype.submit = function() {};
 
+  // DocumentCaptureTask Object Properties
+
+  DocumentCaptureTask.prototype.documentType = undefined;
+
+  DocumentCaptureTask.prototype.features = undefined;
+
+  DocumentCaptureTask.prototype.id = undefined;
+
+  DocumentCaptureTask.prototype.inboundDependencies = undefined;
+
+  DocumentCaptureTask.prototype.inputFile = undefined;
+
+  DocumentCaptureTask.prototype.language = undefined;
+
+  DocumentCaptureTask.prototype.ociConfig = undefined;
+
+  DocumentCaptureTask.prototype.outputFilePath = undefined;
+
+  // DocumentCaptureTaskStatus Object Properties
+
+  DocumentCaptureTaskStatus.prototype.status = undefined;
+
+  DocumentCaptureTaskStatus.prototype.taskId = undefined;
+
   // EntityDeduplicationTask Object Methods
 
   EntityDeduplicationTask.prototype.submit = function() {};
 
+  // EntityDeduplicationTask Object Properties
+
+  EntityDeduplicationTask.prototype.dedupeMode = undefined;
+
+  EntityDeduplicationTask.prototype.entityType = undefined;
+
+  EntityDeduplicationTask.prototype.id = undefined;
+
+  EntityDeduplicationTask.prototype.masterRecordId = undefined;
+
+  EntityDeduplicationTask.prototype.masterSelectionMode = undefined;
+
+  EntityDeduplicationTask.prototype.recordIds = undefined;
+
+  // EntityDeduplicationTaskStatus Object Properties
+
+  EntityDeduplicationTaskStatus.prototype.status = undefined;
+
+  EntityDeduplicationTaskStatus.prototype.taskId = undefined;
+
   // MapReduceScriptTask Object Methods
 
   MapReduceScriptTask.prototype.submit = function() {};
+
+  // MapReduceScriptTask Object Properties
+
+  MapReduceScriptTask.prototype.deploymentId = undefined;
+
+  MapReduceScriptTask.prototype.id = undefined;
+
+  MapReduceScriptTask.prototype.params = undefined;
+
+  MapReduceScriptTask.prototype.scriptId = undefined;
 
   // MapReduceScriptTaskStatus Object Methods
 
@@ -134,19 +208,105 @@ module.exports = (function () {
 
   MapReduceScriptTaskStatus.prototype.getTotalReduceCount = function() {};
 
+  // MapReduceScriptTaskStatus Object Properties
+
+  MapReduceScriptTaskStatus.prototype.deploymentId = undefined;
+
+  MapReduceScriptTaskStatus.prototype.scriptId = undefined;
+
+  MapReduceScriptTaskStatus.prototype.stage = undefined;
+
+  MapReduceScriptTaskStatus.prototype.status = undefined;
+
+  MapReduceScriptTaskStatus.prototype.taskId = undefined;
+
   // QueryTask Object Methods
 
   QueryTask.prototype.addInboundDependency = function(options) {};
 
   QueryTask.prototype.submit = function() {};
 
+  // QueryTask Object Properties
+
+  QueryTask.prototype.fileId = undefined;
+
+  QueryTask.prototype.filePath = undefined;
+
+  QueryTask.prototype.id = undefined;
+
+  QueryTask.prototype.inboundDependencies = undefined;
+
+  QueryTask.prototype.query = undefined;
+
+  // QueryTaskStatus Object Properties
+
+  QueryTaskStatus.prototype.fileId = undefined;
+
+  QueryTaskStatus.prototype.query = undefined;
+
+  QueryTaskStatus.prototype.status = undefined;
+
+  QueryTaskStatus.prototype.taskId = undefined;
+
   // RecordActionTask
 
   RecordActionTask.prototype.submit = function() {};
 
+  // RecordActionTask Object Properties
+
+  RecordActionTask.prototype.action = undefined;
+
+  RecordActionTask.prototype.condition = undefined;
+
+  RecordActionTask.prototype.id = undefined;
+
+  RecordActionTask.prototype.paramCallback = undefined;
+
+  RecordActionTask.prototype.params = undefined;
+
+  RecordActionTask.prototype.recordType = undefined;
+
+  // RecordActionTaskStatus Object Properties
+
+  RecordActionTaskStatus.prototype.complete = undefined;
+
+  RecordActionTaskStatus.prototype.errors = undefined;
+
+  RecordActionTaskStatus.prototype.failed = undefined;
+
+  RecordActionTaskStatus.prototype.pending = undefined;
+
+  RecordActionTaskStatus.prototype.results = undefined;
+
+  RecordActionTaskStatus.prototype.status = undefined;
+
+  RecordActionTaskStatus.prototype.succeeded = undefined;
+
+  RecordActionTaskStatus.prototype.taskId = undefined;
+
   // ScheduledScriptTask Object Methods
 
   ScheduledScriptTask.prototype.submit = function() {};
+
+  // ScheduledScriptTask Object Properties
+
+  ScheduledScriptTask.prototype.deploymentId = undefined;
+
+  ScheduledScriptTask.prototype.id = undefined;
+
+  ScheduledScriptTask.prototype.params = undefined;
+
+  ScheduledScriptTask.prototype.scriptId = undefined;
+
+  // ScheduledScriptTaskStatus Object Properties
+
+  ScheduledScriptTaskStatus.prototype.deploymentId = undefined;
+
+  ScheduledScriptTaskStatus.prototype.scriptId = undefined;
+
+  ScheduledScriptTaskStatus.prototype.status = undefined;
+
+  ScheduledScriptTaskStatus.prototype.taskId = undefined;
 
   // SearchTask Object Methods
 
@@ -154,15 +314,81 @@ module.exports = (function () {
 
   SearchTask.prototype.submit = function() {};
 
+  // SearchTask Object Properties
+
+  SearchTask.prototype.fileId = undefined;
+
+  SearchTask.prototype.filePath = undefined;
+
+  SearchTask.prototype.id = undefined;
+
+  SearchTask.prototype.inboundDependencies = undefined;
+
+  SearchTask.prototype.savedSearchId = undefined;
+
+  // SearchTaskStatus Object Properties
+
+  SearchTaskStatus.prototype.fileId = undefined;
+
+  SearchTaskStatus.prototype.savedSearchId = undefined;
+
+  SearchTaskStatus.prototype.status = undefined;
+
+  SearchTaskStatus.prototype.taskId = undefined;
+
   // SuiteQLTask Object Methods
   
   SuiteQLTask.prototype.addInboundDependency = function(options) {};
 
   SuiteQLTask.prototype.submit = function() {};
 
+  // SuiteQLTask Object Properties
+
+  SuiteQLTask.prototype.fileId = undefined;
+
+  SuiteQLTask.prototype.filePath = undefined;
+
+  SuiteQLTask.prototype.id = undefined;
+
+  SuiteQLTask.prototype.inboundDependencies = undefined;
+
+  SuiteQLTask.prototype.params = undefined;
+
+  SuiteQLTask.prototype.query = undefined;
+
+  // SuiteQLTaskStatus Object Properties
+
+  SuiteQLTaskStatus.prototype.fileId = undefined;
+
+  SuiteQLTaskStatus.prototype.params = undefined;
+
+  SuiteQLTaskStatus.prototype.query = undefined;
+
+  SuiteQLTaskStatus.prototype.status = undefined;
+
+  SuiteQLTaskStatus.prototype.taskId = undefined;
+
   // WorkflowTriggerTask Object Methods
 
   WorkflowTriggerTask.prototype.submit = function() {};
+
+  // WorkflowTriggerTask Object Properties
+
+  WorkflowTriggerTask.prototype.id = undefined;
+
+  WorkflowTriggerTask.prototype.params = undefined;
+
+  WorkflowTriggerTask.prototype.recordId = undefined;
+
+  WorkflowTriggerTask.prototype.recordType = undefined;
+
+  WorkflowTriggerTask.prototype.workflowId = undefined;
+
+  // WorkflowTriggerTaskStatus Object Properties
+
+  WorkflowTriggerTaskStatus.prototype.status = undefined;
+
+  WorkflowTriggerTaskStatus.prototype.taskId = undefined;
 
   // Enum
 

@@ -40,11 +40,35 @@ module.exports = (function () {
 
   http.prototype.request.promise = function(options) {};
 
+  // ClientResponse Object Properties
+
+  ClientResponse.prototype.body = undefined;
+
+  ClientResponse.prototype.code = undefined;
+
+  ClientResponse.prototype.headers = undefined;
+
   // ServerRequest Object Methods
 
   ServerRequest.prototype.getLineCount = function(options) {};
 
   ServerRequest.prototype.getSublistValue = function(options) {};
+
+  // ServerRequest Object Properties
+
+  ServerRequest.prototype.body = undefined;
+
+  ServerRequest.prototype.clientIpAddress = undefined;
+
+  ServerRequest.prototype.files = undefined;
+
+  ServerRequest.prototype.headers = undefined;
+
+  ServerRequest.prototype.method = undefined;
+
+  ServerRequest.prototype.parameters = undefined;
+
+  ServerRequest.prototype.url = undefined;
 
   // ServerResponse Object Methods
 
@@ -67,6 +91,10 @@ module.exports = (function () {
   ServerResponse.prototype.writeLine = function(options) {};
 
   ServerResponse.prototype.writePage = function(options) {};
+
+  // ServerResponse Object Properties
+
+  ServerResponse.prototype.headers = undefined;
 
   // Enum
 

@@ -28,6 +28,20 @@ module.exports = (function () {
 
   Key.prototype.save = function() {};
 
+  // Key Object Properties
+
+  Key.prototype.description = undefined;
+
+  Key.prototype.file = undefined;
+
+  Key.prototype.name = undefined;
+
+  Key.prototype.password = undefined;
+
+  Key.prototype.restrictions = undefined;
+
+  Key.prototype.scriptId = undefined;
+
   // Enum
 
   function Operator() {

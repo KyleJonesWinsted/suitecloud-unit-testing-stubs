@@ -18,6 +18,42 @@ module.exports = (function () {
 
   error.prototype.create = function(options) {};
 
+  // SuiteScriptError Object Properties
+
+  SuiteScriptError.prototype.cause = undefined;
+
+  SuiteScriptError.prototype.id = undefined;
+
+  SuiteScriptError.prototype.message = undefined;
+
+  SuiteScriptError.prototype.name = undefined;
+
+  SuiteScriptError.prototype.notifyOff = undefined;
+
+  SuiteScriptError.prototype.stack = undefined;
+
+  SuiteScriptError.prototype.type = undefined;
+
+  // UserEventError Object Properties
+
+  UserEventError.prototype.cause = undefined;
+
+  UserEventError.prototype.eventType = undefined;
+
+  UserEventError.prototype.id = undefined;
+
+  UserEventError.prototype.message = undefined;
+
+  UserEventError.prototype.name = undefined;
+
+  UserEventError.prototype.notifyOff = undefined;
+
+  UserEventError.prototype.recordId = undefined;
+
+  UserEventError.prototype.stack = undefined;
+
+  UserEventError.prototype.type = undefined;
+
   // Enum
 
   function Type() {
