@@ -57,7 +57,7 @@ module.exports = (function () {
     this.URL = "url";
   }
 
-  function TimeZone() {
+  function Timezone() {
     this.ETC_GMT_PLUS_12 = 'Etc/GMT+12';
     this.PACIFIC_SAMOA = 'Pacific/Samoa';
     this.PACIFIC_HONOLULU = 'Pacific/Honolulu';
@@ -149,7 +149,7 @@ module.exports = (function () {
 
   format.prototype.Type = new Type();
 
-  format.prototype.TimeZone = new TimeZone();
+  format.prototype.Timezone = new Timezone();
 
   return new format();
 })();

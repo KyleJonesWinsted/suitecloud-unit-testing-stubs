@@ -56,7 +56,7 @@ module.exports = (function () {
 
   ServerResponse.prototype.sendRedirect = function(options) {};
 
-  ServerResponse.prototype.setCdnCachable = function(options) {};
+  ServerResponse.prototype.setCdnCacheable = function(options) {};
 
   ServerResponse.prototype.setHeader = function(options) {};
 

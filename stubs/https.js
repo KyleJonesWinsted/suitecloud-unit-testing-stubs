@@ -24,9 +24,9 @@ module.exports = (function() {
 
   // Method
 
-  https.prototype.createSecureKey = function(options) {};
+  https.prototype.createSecretKey = function(options) {};
 
-  https.prototype.createSecureKey.promise = function(options) {};
+  https.prototype.createSecretKey.promise = function(options) {};
 
   https.prototype.createSecureString = function(options) {};
 
@@ -84,7 +84,7 @@ module.exports = (function() {
 
   ServerResponse.prototype.sendRedirect = function(options) {};
 
-  ServerResponse.prototype.setCdnCachable = function(options) {};
+  ServerResponse.prototype.setCdnCacheable = function(options) {};
 
   ServerResponse.prototype.setHeader = function(options) {};
 

@@ -114,7 +114,7 @@ module.exports = (function () {
 
   Field.prototype.insertSelectOption = function(options) {};
 
-  Field.prototype.removeSelectOptions = function(options) {};
+  Field.prototype.removeSelectOption = function(options) {};
 
   // Sublist Object Members
 

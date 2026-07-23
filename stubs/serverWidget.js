@@ -204,7 +204,7 @@ module.exports = (function () {
 
   Sublist.prototype.addMarkAllButtons = function () { };
 
-  Sublist.prototype.addRefreshButtons = function () { };
+  Sublist.prototype.addRefreshButton = function () { };
 
   Sublist.prototype.getField = function (options) { };
 
