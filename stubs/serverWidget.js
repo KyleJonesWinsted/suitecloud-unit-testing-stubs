@@ -106,6 +106,8 @@ module.exports = (function () {
 
   AssistantStep.prototype.getLineCount = function (options) { };
 
+  AssistantStep.prototype.getSublistFieldIds = function (options) { };
+
   AssistantStep.prototype.getSublistValue = function (options) { };
 
   AssistantStep.prototype.getSubmittedSublistIds = function () { };
@@ -168,6 +170,8 @@ module.exports = (function () {
 
   Form.prototype.insertField = function (options) { };
 
+  Form.prototype.insertSublist = function (options) { };
+
   Form.prototype.insertSubtab = function (options) { };
 
   Form.prototype.insertTab = function (options) { };
@@ -201,6 +205,8 @@ module.exports = (function () {
   Sublist.prototype.addButton = function (options) { };
 
   Sublist.prototype.addField = function (options) { };
+
+  Sublist.prototype.insertField = function (options) { };
 
   Sublist.prototype.addMarkAllButtons = function () { };
 

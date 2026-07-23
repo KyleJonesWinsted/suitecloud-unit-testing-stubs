@@ -32,15 +32,27 @@ module.exports = (function () {
 
   dataset.prototype.createJoin = function(options) {};
 
+  dataset.prototype.createTranslation = function(options) {};
+
+  dataset.prototype.describe = function(options) {};
+
+  dataset.prototype.describe.promise = function(options) {};
+
   dataset.prototype.list = function() {};
 
+  dataset.prototype.listPaged = function(options) {};
+
   dataset.prototype.load = function(options) {};
+
+  dataset.prototype.load.promise = function(options) {};
 
   // Dataset Object Methods
 
   Dataset.prototype.getExpressionFromColumn = function(options) {};
 
   Dataset.prototype.run = function() {};
+
+  Dataset.prototype.run.promise = function() {};
 
   Dataset.prototype.runPaged = function() {};
 

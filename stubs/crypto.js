@@ -40,6 +40,8 @@ module.exports = (function () {
 
   crypto.prototype.createHmac = function(options) {};
 
+  crypto.prototype.checkPasswordField = function(options) {};
+
   crypto.prototype.createSecretKey = function(options) {};
 
   // Cipher Object Methods

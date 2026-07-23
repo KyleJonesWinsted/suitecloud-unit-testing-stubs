@@ -20,6 +20,10 @@ module.exports = (function () {
 
   keyControl.prototype.loadKey = function(options) {};
 
+  keyControl.prototype.lock = function(options) {};
+
+  keyControl.prototype.unlock = function(options) {};
+
   // Key Object Methods
 
   Key.prototype.save = function() {};

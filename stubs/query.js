@@ -100,6 +100,10 @@ module.exports = (function () {
 
   // PagedData Object Methods
 
+  PagedData.prototype.fetch = function(options) {};
+
+  PagedData.prototype.fetch.promise = function(options) {};
+
   PagedData.prototype.iterator = function() {};
 
   // Query Object Methods
@@ -137,6 +141,8 @@ module.exports = (function () {
   // Result Object Methods
 
   Result.prototype.asMap = function() {};
+
+  Result.prototype.getValue = function(options) {};
 
   // ResultSet Object Methods
 

@@ -54,6 +54,12 @@ module.exports = (function() {
 
   https.prototype.requestRestlet = function(options) {};
 
+  https.prototype.requestRestlet.promise = function(options) {};
+
+  https.prototype.requestSuitelet = function(options) {};
+
+  https.prototype.requestSuitelet.promise = function(options) {};
+
   https.prototype.requestSuiteTalkRest = function(options) {};
 
   // SecureString Object Methods
@@ -67,6 +73,8 @@ module.exports = (function() {
   SecureString.prototype.hash = function(options) {};
 
   SecureString.prototype.hmac = function(options) {};
+
+  SecureString.prototype.replaceString = function(options) {};
 
   // ServerRequest Object Methods
 

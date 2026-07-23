@@ -22,6 +22,10 @@ module.exports = (function () {
 
   certificateControl.prototype.loadCertificate = function (options) { };
 
+  certificateControl.prototype.lock = function (options) { };
+
+  certificateControl.prototype.unlock = function (options) { };
+
   // Certificate Object Methods
 
   Certificate.prototype.save = function () { };

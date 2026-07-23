@@ -14,6 +14,8 @@ module.exports = (function () {
 
   var PagedData = function () { };
 
+  var PageRange = function () { };
+
   var Result = function () { };
 
   var ResultSet = function () { };
@@ -29,6 +31,8 @@ module.exports = (function () {
   search.prototype.Page = Page;
 
   search.prototype.PagedData = PagedData;
+
+  search.prototype.PageRange = PageRange;
 
   search.prototype.Result = Result;
 

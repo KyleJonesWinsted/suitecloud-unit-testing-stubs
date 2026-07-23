@@ -10,6 +10,10 @@ module.exports = (function () {
 
   var CsvImportTaskStatus = function() {};
 
+  var DocumentCaptureTask = function() {};
+
+  var DocumentCaptureTaskStatus = function() {};
+
   var EntityDeduplicationTask = function() {};
 
   var EntityDeduplicationTaskStatus = function() {};
@@ -19,6 +23,8 @@ module.exports = (function () {
   var MapReduceScriptTaskStatus = function() {};
 
   var QueryTask = function() {};
+
+  var QueryTaskStatus = function() {};
 
   var RecordActionTask = function() {};
 
@@ -34,6 +40,8 @@ module.exports = (function () {
 
   var SuiteQLTask = function() {};
 
+  var SuiteQLTaskStatus = function() {};
+
   var WorkflowTriggerTask = function() {};
 
   var WorkflowTriggerTaskStatus = function() {};
@@ -41,6 +49,10 @@ module.exports = (function () {
   task.prototype.CsvImportTask = CsvImportTask;
 
   task.prototype.CsvImportTaskStatus = CsvImportTaskStatus;
+
+  task.prototype.DocumentCaptureTask = DocumentCaptureTask;
+
+  task.prototype.DocumentCaptureTaskStatus = DocumentCaptureTaskStatus;
 
   task.prototype.EntityDeduplicationTask = EntityDeduplicationTask;
 
@@ -51,6 +63,8 @@ module.exports = (function () {
   task.prototype.MapReduceScriptTaskStatus = MapReduceScriptTaskStatus;
 
   task.prototype.QueryTask = QueryTask;
+
+  task.prototype.QueryTaskStatus = QueryTaskStatus;
 
   task.prototype.RecordActionTask = RecordActionTask;
 
@@ -66,6 +80,8 @@ module.exports = (function () {
 
   task.prototype.SuiteQLTask = SuiteQLTask;
 
+  task.prototype.SuiteQLTaskStatus = SuiteQLTaskStatus;
+
   task.prototype.WorkflowTriggerTask = WorkflowTriggerTask;
 
   task.prototype.WorkflowTriggerTaskStatus = WorkflowTriggerTaskStatus;
@@ -79,6 +95,12 @@ module.exports = (function () {
   // CsvImportTask Object Methods
 
   CsvImportTask.prototype.submit = function() {};
+
+  // DocumentCaptureTask Object Methods
+
+  DocumentCaptureTask.prototype.addInboundDependency = function(options) {};
+
+  DocumentCaptureTask.prototype.submit = function() {};
 
   // EntityDeduplicationTask Object Methods
 
@@ -188,6 +210,7 @@ module.exports = (function () {
 
   function TaskType() {
     this.CSV_IMPORT = "CSV_IMPORT";
+    this.DOCUMENT_CAPTURE = "DOCUMENT_CAPTURE";
     this.ENTITY_DEDUPLICATION = "ENTITY_DEDUPLICATION";
     this.MAP_REDUCE = "MAP_REDUCE";
     this.QUERY = "QUERY";
